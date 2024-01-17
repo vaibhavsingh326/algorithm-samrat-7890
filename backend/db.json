@@ -1,0 +1,200 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "user1",
+      "email": "user1@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "profilePicture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.profilebakery.com%2Fen%2Fprofile-picture-ai%2F&psig=AOvVaw0crRPtNWM5v8f-4WQIa8QC&ust=1705576008252000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjVuZLyo-SDAxV4TmwGHUNDB_4QjRx6BAgAEBc",
+      "programIds": [
+        1,
+        2,
+        3
+      ],
+      "courseIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "2",
+      "username": "user2",
+      "email": "user2@example.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "profilePicture": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A1400%2F1*UumuJs03V0h8ngDforLYSg.jpeg&tbnid=rSp2nN4HoBGkoM&vet=12ahUKEwjxur3ro-SDAxVX_DgGHcMSAjcQMyggegUIARCVAQ..i&imgrefurl=https%3A%2F%2Fmedium.com%2Fdata-driven-fiction%2Fskyrocket-your-online-presence-with-ai-powered-professional-headshots-ea9193bfb65e&docid=KpPFlaeYsHX56M&w=1024&h=1024&q=ai%20generated%20profile%20pictures&ved=2ahUKEwjxur3ro-SDAxVX_DgGHcMSAjcQMyggegUIARCVAQ",
+      "programIds": [
+        4,
+        5,
+        6
+      ],
+      "courseIds": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "name": "Artistic Expression",
+      "description": "Encouraging creativity through art and crafts",
+      "imageLink": "https://img.freepik.com/premium-photo/vibrant-art-class-with-children-working-different-art-projects-generated-by-ai_930337-100.jpg?w=1380"
+    },
+    {
+      "id": "2",
+      "name": "Nature Exploration",
+      "description": "Exploring the wonders of nature and outdoor activities",
+      "imageLink": "https://example.com/nature_exploration.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Science Adventures",
+      "description": "Hands-on experiments to spark scientific curiosity",
+      "imageLink": "https://example.com/science_adventures.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Sports and Fitness",
+      "description": "Fun outdoor games and activities for physical development",
+      "imageLink": "https://example.com/sports_and_fitness.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Math Mania",
+      "description": "Engaging math challenges and puzzles",
+      "imageLink": "https://previews.123rf.com/images/nadezhda1906/nadezhda19061801/nadezhda1906180100133/93625229-kids-learning-numbers-mental-arithmetic-abacus-calculation.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Harvest Celebration",
+      "description": "Learning about agriculture and seasonal festivities",
+      "imageLink": "https://example.com/harvest_celebration.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Storytelling Workshop",
+      "description": "Enhancing language skills through storytelling",
+      "imageLink": "https://example.com/storytelling_workshop.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Botanical Garden Tour",
+      "description": "Exploring different plants and their habitats",
+      "imageLink": "https://example.com/botanical_garden_tour.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Music and Rhythm",
+      "description": "Introduction to music and rhythm through fun activities",
+      "imageLink": "https://example.com/music_and_rhythm.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Water Play",
+      "description": "Creative water-based activities for summer fun",
+      "imageLink": "https://example.com/water_play.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Coding for Kids",
+      "description": "Basic coding concepts for young minds",
+      "imageLink": "https://example.com/coding_for_kids.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Autumn Nature Walk",
+      "description": "Observing and learning about changes in nature during fall",
+      "imageLink": "https://example.com/autumn_nature_walk.jpg"
+    }
+  ],
+  "programs": [
+    {
+      "id": "1",
+      "userIds": [
+        1
+      ],
+      "season": "Spring",
+      "indoorCourseId": 1,
+      "outdoorCourseId": 2,
+      "imageLink": "https://example.com/spring_program.jpg"
+    },
+    {
+      "id": "2",
+      "userIds": [
+        1
+      ],
+      "season": "Summer",
+      "indoorCourseId": 3,
+      "outdoorCourseId": 4,
+      "imageLink": "https://example.com/summer_program.jpg"
+    },
+    {
+      "id": "3",
+      "userIds": [
+        1
+      ],
+      "season": "Fall",
+      "indoorCourseId": 5,
+      "outdoorCourseId": 6,
+      "imageLink": "https://example.com/fall_program.jpg"
+    },
+    {
+      "id": "4",
+      "userIds": [
+        2
+      ],
+      "season": "Spring",
+      "indoorCourseId": 7,
+      "outdoorCourseId": 8,
+      "imageLink": "https://example.com/spring_program_user2.jpg"
+    },
+    {
+      "id": "5",
+      "userIds": [
+        2
+      ],
+      "season": "Summer",
+      "indoorCourseId": 9,
+      "outdoorCourseId": 10,
+      "imageLink": "https://example.com/summer_program_user2.jpg"
+    },
+    {
+      "id": "6",
+      "userIds": [
+        2
+      ],
+      "season": "Fall",
+      "indoorCourseId": 11,
+      "outdoorCourseId": 12,
+      "imageLink": "https://example.com/fall_program_user2.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "userId": 1,
+      "dateTime": "2024-01-17T12:30:00",
+      "testimonial": "Our experience with the programs was amazing. My child learned a lot and had so much fun!",
+      "programId": 1,
+      "courseId": 2,
+      "id": "36e9"
+    },
+    {
+      "userId": 2,
+      "dateTime": "2024-01-18T14:45:00",
+      "testimonial": "The outdoor courses were especially enjoyable. It's great to see my child exploring nature.",
+      "programId": 5,
+      "courseId": 10,
+      "id": "b815"
+    }
+  ]
+}

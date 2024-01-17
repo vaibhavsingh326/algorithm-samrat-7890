@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A mock-server for the student project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server db.json"
+  },
+  "author": "Vaibhav Singh",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.21"
+  }
+}
