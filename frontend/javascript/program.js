@@ -1,5 +1,5 @@
-const courses = {
-    "courses": [
+
+   const courses=[
       {
         "title": "Fun with Numbers",
         "description": "Learn basic arithmetic through engaging activities and games.",
@@ -81,9 +81,8 @@ const courses = {
         "course_duration": "6 weeks"
       }
     ]
-  }
   
 
 courses.forEach(course => {
-  console.log(course);
+ let card = document.createElement("div");
 });
