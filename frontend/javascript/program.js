@@ -1,117 +1,73 @@
 
-   const courses=[
-      {
-        "title": "Online Guitar Course for Kids",
-        "description": "Strike the strings of Guitar and unleash the Rockstar in you ...",
-        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp",
-        "course_price": 19.99,
-        "course_age_group": "5-7 years",
-        "course_duration": "4 weeks"
-      },
-      {
-        "title": "Online Art and Craft Course for Kids",
-        "description": "Get creative with colors with this Art and Craft course!",
-        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018542.webp",
-        "course_price": 24.99,
-        "course_age_group": "6-8 years",
-        "course_duration": "6 weeks"
-      },
-      {
-        "title": "Online Public Speaking Course for Kids",
-        "description": "Improve confidence and communication skills with this beginn ...",
-        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660281459.webp",
-        "course_price": 29.99,
-        "course_age_group": "8-10 years",
-        "course_duration": "8 weeks"
-      },
-      {
-        "title": "Online Chess Course for Kids",
-        "description": "Chess: strengthening the child's mind from a young age!",
-        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660280975.webp",
-        "course_price": 22.99,
-        "course_age_group": "7-9 years",
-        "course_duration": "5 weeks"
-      },
-      {
-        "title": "Online Bollywood Dance Course for Kids",
-        "description": "Learn to dance like a star on the Latest Bollywood Hits!",
-        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018153.webp",
-        "course_price": 27.99,
-        "course_age_group": "6-10 years",
-        "course_duration": "7 weeks"
-      },
-      {
-        "title": "Online Keyboard And Piano Course for Kids",
-        "description": "Enter the world of Music and play magical tunes on Piano!",
-        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660363720.webp",
-        "course_price": 34.99,
-        "course_age_group": "9-12 years",
-        "course_duration": "10 weeks"
-      },
-      {
-        "title": "Online Yoga Course for Kids",
-        "description": "Get Fit and Active with Our Online Yoga Course!",
-        "child_image": "https://d11vgh97fxk0wu.cloudfront.net/sidebar_image/1698822583.jpeg",
-        "course_price": 39.99,
-        "course_age_group": "8-12 years",
-        "course_duration": "6 weeks"
-      },
-      {
-        "title": "Healthy Habits Workshop",
-        "description": "Teach kids about the importance of a healthy lifestyle through games and activities.",
-        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp",
-        "course_price": 18.99,
-        "course_age_group": "6-9 years",
-        "course_duration": "4 weeks"
-      },
-      {
-        "title": "Math Puzzles Challenge",
-        "description": "Stimulate logical thinking with a series of exciting math puzzles and challenges.",
-        "child_image": "https://media.istockphoto.com/id/1498270459/photo/asian-girls-play-with-puzzles-learn-math-education-concept.jpg?s=612x612&w=0&k=20&c=TUJ0noG4G8ImxB42PRUsuvy096g8iGrA6aCPoDwStw4=",
-        "course_price": 26.99,
-        "course_age_group": "9-11 years",
-        "course_duration": "8 weeks"
-      }
+  // sort Data Based on Course 
+let AllCourse = document.getElementById("All-course");
+let MusicCourse = document.getElementById("MUSIC-course");
+let Science = document.getElementById("Science");
+let Health = document.getElementById("Health");
+let Nature  = document.getElementById("Nature");
+let Coding = document.getElementById("Coding");
+let HistoryAndCulture = document.getElementById("History");
 
-    ]
+const cardContainer = document.getElementById('course-container');
+
+// BaseURL 
+let url = `http://localhost:9090/courses`
+
+AllCourse.addEventListener("click",()=>{
+  alert("hello are sure")
+  FetchData(url)
+})
+
+MusicCourse.addEventListener("click",()=>{
+  alert("hello are sure")
+  FetchData(url,`category=Music and Arts`)
+})
+
+Science.addEventListener("click",()=>{
+  alert("hello are you sure")
+  FetchData(url,`category=Science and Exploration`)
+})
   
+Health.addEventListener("click",()=>{
+  alert("hello are you sure")
+  FetchData(url,`category=Health and Fitness`)
+})
 
-  //   <div class="card">
-  //   <div class="card-img">
-  //     <img
-  //       src="https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp"
-  //       alt=""
-  //     />
-  //   </div>
-  //   <div class="card-body">
-  //     <div class="course-name">
-  //       <h3>Online Guitar Course for Kids</h3>
-  //       <p class="course-details">
-  //         Strike the strings of Guitar and unleash the Rockstar in you ...
-  //       </p>
-  //     </div>
+Nature.addEventListener("click",()=>{
+  alert("hello are you sure");
+  FetchData(url,`category=Nature and Environment`)
+})
 
-  //     <div class="price">
-  //       ₹ 8000 <span>for 3 months ( 24 classes)</span>
-  //     </div>
+Coding.addEventListener("click",()=>{
+  alert("hello are you sure!");
+  FetchData(url,`category=Technology and Coding`)
+})
 
-  //     <div class="desc">
-  //       <p class="Age-group">Age group: <span>5-14 Years</span></p>
-  //       <p class="Course">
-  //         Course duration:
-  //         <span>24 sessions in 3 months for beginner level</span>
-  //       </p>
-  //       <p class="Format">
-  //         Format: <span>Group or Individual classes</span>
-  //       </p>
-  //       <button class="button">Book Free Demo</button>
-  //     </div>
-  //   </div>
-  // </div>
+HistoryAndCulture.addEventListener("click",()=>{
+  alert("hello are sure ");
+  FetchData(url,`category=History and Culture`)
+})
+
+  
+  FetchData(url)
+    async function FetchData(url,para=""){
+      cardContainer.innerHTML = ""
+      let res =  await fetch(`${url}?${para}`)
+      let data = await res.json();
+      console.log(data)
+      population(data)
+    }
+
+
+  function population(courses){
+    courses.forEach(course => {
+      createCard(course);
+    });
+  }
+
 
   function createCard(course) {
-    const cardContainer = document.getElementById('course-container');
-
+    // const cardContainer = document.getElementById('course-container');
     const card = document.createElement('div');
     card.classList.add('card');
 
@@ -137,7 +93,10 @@
 
     const price = document.createElement('div');
     price.classList.add('price');
-    price.textContent = `₹ ${course.course_price} for ${course.course_duration}`;
+    const p = document.createElement('p')
+    p.textContent = `₹ ${course.course_price} for ${course.course_duration}`;
+    price.append(p);
+    // price.textContent = `₹ ${course.course_price} for ${course.course_duration}`;
 
     const desc = document.createElement('div');
     desc.classList.add('desc');
@@ -147,9 +106,9 @@
     const courseDuration = document.createElement('p');
     courseDuration.classList.add('Course');
     courseDuration.textContent = `Course duration: ${course.course_duration}`;
-    const format = document.createElement('p');
-    format.classList.add('Format');
-    format.textContent = `Format: Group or Individual classes`;
+    const category = document.createElement('p');
+    category.classList.add('Format');
+    category.textContent = `Category: ${course.category}`
 
     const button = document.createElement('button');
     button.classList.add('button');
@@ -157,7 +116,7 @@
 
     desc.appendChild(ageGroup);
     desc.appendChild(courseDuration);
-    desc.appendChild(format);
+    desc.appendChild(category);
     desc.appendChild(button);
 
     cardBody.appendChild(courseName);
@@ -171,6 +130,3 @@
   }
 
   // Create cards for each course
-  courses.forEach(course => {
-    createCard(course);
-  });
