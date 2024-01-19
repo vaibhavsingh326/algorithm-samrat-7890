@@ -1,88 +1,132 @@
 
-   const courses=[
-      {
-        "title": "Fun with Numbers",
-        "description": "Learn basic arithmetic through engaging activities and games.",
-        "child_image": "fun_with_numbers.jpg",
-        "course_price": 19.99,
-        "course_age_group": "5-7 years",
-        "course_duration": "4 weeks"
-      },
-      {
-        "title": "Creative Storytelling",
-        "description": "Unleash your child's imagination through interactive storytelling sessions.",
-        "child_image": "creative_storytelling.jpg",
-        "course_price": 24.99,
-        "course_age_group": "6-8 years",
-        "course_duration": "6 weeks"
-      },
-      {
-        "title": "Exploring Science Wonders",
-        "description": "Discover the wonders of the natural world with fun experiments and activities.",
-        "child_image": "science_wonders.jpg",
-        "course_price": 29.99,
-        "course_age_group": "8-10 years",
-        "course_duration": "8 weeks"
-      },
-      {
-        "title": "Artistic Adventures",
-        "description": "Encourage creativity through various art forms like drawing, painting, and crafts.",
-        "child_image": "artistic_adventures.jpg",
-        "course_price": 22.99,
-        "course_age_group": "7-9 years",
-        "course_duration": "5 weeks"
-      },
-      {
-        "title": "Music Magic",
-        "description": "Introduce your child to the world of music with fun and interactive lessons.",
-        "child_image": "music_magic.jpg",
-        "course_price": 27.99,
-        "course_age_group": "6-10 years",
-        "course_duration": "7 weeks"
-      },
-      {
-        "title": "Outdoor Explorers",
-        "description": "Foster a love for nature through outdoor adventures and nature-related activities.",
-        "child_image": "outdoor_explorers.jpg",
-        "course_price": 34.99,
-        "course_age_group": "9-12 years",
-        "course_duration": "10 weeks"
-      },
-      {
-        "title": "Coding for Kids",
-        "description": "Introduction to basic coding concepts in a fun and interactive way.",
-        "child_image": "coding_for_kids.jpg",
-        "course_price": 39.99,
-        "course_age_group": "8-12 years",
-        "course_duration": "6 weeks"
-      },
-      {
-        "title": "Healthy Habits Workshop",
-        "description": "Teach kids about the importance of a healthy lifestyle through games and activities.",
-        "child_image": "healthy_habits.jpg",
-        "course_price": 18.99,
-        "course_age_group": "6-9 years",
-        "course_duration": "4 weeks"
-      },
-      {
-        "title": "Math Puzzles Challenge",
-        "description": "Stimulate logical thinking with a series of exciting math puzzles and challenges.",
-        "child_image": "math_puzzles.jpg",
-        "course_price": 26.99,
-        "course_age_group": "9-11 years",
-        "course_duration": "8 weeks"
-      },
-      {
-        "title": "Language Explorers",
-        "description": "Explore the world of language through games, stories, and language-building activities.",
-        "child_image": "language_explorers.jpg",
-        "course_price": 31.99,
-        "course_age_group": "7-10 years",
-        "course_duration": "6 weeks"
-      }
-    ]
-  
+  // sort Data Based on Course 
+let AllCourse = document.getElementById("All-course");
+let MusicCourse = document.getElementById("MUSIC-course");
+let Science = document.getElementById("Science");
+let Health = document.getElementById("Health");
+let Nature  = document.getElementById("Nature");
+let Coding = document.getElementById("Coding");
+let HistoryAndCulture = document.getElementById("History");
 
-courses.forEach(course => {
- let card = document.createElement("div");
-});
+const cardContainer = document.getElementById('course-container');
+
+// BaseURL 
+let url = `http://localhost:9090/courses`
+
+AllCourse.addEventListener("click",()=>{
+  alert("hello are sure")
+  FetchData(url)
+})
+
+MusicCourse.addEventListener("click",()=>{
+  alert("hello are sure")
+  FetchData(url,`category=Music and Arts`)
+})
+
+Science.addEventListener("click",()=>{
+  alert("hello are you sure")
+  FetchData(url,`category=Science and Exploration`)
+})
+  
+Health.addEventListener("click",()=>{
+  alert("hello are you sure")
+  FetchData(url,`category=Health and Fitness`)
+})
+
+Nature.addEventListener("click",()=>{
+  alert("hello are you sure");
+  FetchData(url,`category=Nature and Environment`)
+})
+
+Coding.addEventListener("click",()=>{
+  alert("hello are you sure!");
+  FetchData(url,`category=Technology and Coding`)
+})
+
+HistoryAndCulture.addEventListener("click",()=>{
+  alert("hello are sure ");
+  FetchData(url,`category=History and Culture`)
+})
+
+  
+  FetchData(url)
+    async function FetchData(url,para=""){
+      cardContainer.innerHTML = ""
+      let res =  await fetch(`${url}?${para}`)
+      let data = await res.json();
+      console.log(data)
+      population(data)
+    }
+
+
+  function population(courses){
+    courses.forEach(course => {
+      createCard(course);
+    });
+  }
+
+
+  function createCard(course) {
+    // const cardContainer = document.getElementById('course-container');
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const cardImg = document.createElement('div');
+    cardImg.classList.add('card-img');
+    const img = document.createElement('img');
+    img.src = course.child_image;
+    img.alt = course.title;
+    cardImg.appendChild(img);
+
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
+
+    const courseName = document.createElement('div');
+    courseName.classList.add('course-name');
+    const h3 = document.createElement('h3');
+    h3.textContent = course.title;
+    const courseDetails = document.createElement('p');
+    courseDetails.classList.add('course-details');
+    courseDetails.textContent = course.description;
+    courseName.appendChild(h3);
+    courseName.appendChild(courseDetails);
+
+    const price = document.createElement('div');
+    price.classList.add('price');
+    const p = document.createElement('p')
+    p.textContent = `₹ ${course.course_price} for ${course.course_duration}`;
+    price.append(p);
+    // price.textContent = `₹ ${course.course_price} for ${course.course_duration}`;
+
+    const desc = document.createElement('div');
+    desc.classList.add('desc');
+    const ageGroup = document.createElement('p');
+    ageGroup.classList.add('Age-group');
+    ageGroup.textContent = `Age group: ${course.course_age_group}`;
+    const courseDuration = document.createElement('p');
+    courseDuration.classList.add('Course');
+    courseDuration.textContent = `Course duration: ${course.course_duration}`;
+    const category = document.createElement('p');
+    category.classList.add('Format');
+    category.textContent = `Category: ${course.category}`
+
+    const button = document.createElement('button');
+    button.classList.add('button');
+    button.textContent = 'Book Free Demo';
+
+    desc.appendChild(ageGroup);
+    desc.appendChild(courseDuration);
+    desc.appendChild(category);
+    desc.appendChild(button);
+
+    cardBody.appendChild(courseName);
+    cardBody.appendChild(price);
+    cardBody.appendChild(desc);
+
+    card.appendChild(cardImg);
+    card.appendChild(cardBody);
+
+    cardContainer.appendChild(card);
+  }
+
+  // Create cards for each course

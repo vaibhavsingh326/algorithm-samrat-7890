@@ -1,184 +1,422 @@
 {
-  "users": [
+  "users": [],
+  "orders": [],
+  "cart":[],
+  "adminusers":[],
+  "adminorders": [],
+  "courses":[
     {
-      "id": "1",
-      "username": "user1",
-      "email": "user1@example.com",
-      "firstName": "John",
-      "lastName": "Doe",
-      "profilePicture": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.profilebakery.com%2Fen%2Fprofile-picture-ai%2F&psig=AOvVaw0crRPtNWM5v8f-4WQIa8QC&ust=1705576008252000&source=images&cd=vfe&opi=89978449&ved=2ahUKEwjVuZLyo-SDAxV4TmwGHUNDB_4QjRx6BAgAEBc",
-      "programIds": [
-        1,
-        2,
-        3
-      ],
-      "courseIds": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ]
+      "courseId": 1,
+      "title": "Online Guitar Course for Kids",
+      "description": "Strike the strings of Guitar and unleash the Rockstar in you ...",
+      "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp",
+      "course_price": 19.99,
+      "course_age_group": "5-7 years",
+      "course_duration": "4 weeks",
+      "category": "Music and Arts"
     },
     {
-      "id": "2",
-      "username": "user2",
-      "email": "user2@example.com",
-      "firstName": "Jane",
-      "lastName": "Smith",
-      "profilePicture": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmiro.medium.com%2Fv2%2Fresize%3Afit%3A1400%2F1*UumuJs03V0h8ngDforLYSg.jpeg&tbnid=rSp2nN4HoBGkoM&vet=12ahUKEwjxur3ro-SDAxVX_DgGHcMSAjcQMyggegUIARCVAQ..i&imgrefurl=https%3A%2F%2Fmedium.com%2Fdata-driven-fiction%2Fskyrocket-your-online-presence-with-ai-powered-professional-headshots-ea9193bfb65e&docid=KpPFlaeYsHX56M&w=1024&h=1024&q=ai%20generated%20profile%20pictures&ved=2ahUKEwjxur3ro-SDAxVX_DgGHcMSAjcQMyggegUIARCVAQ",
-      "programIds": [
-        4,
-        5,
-        6
-      ],
-      "courseIds": [
-        7,
-        8,
-        9,
-        10,
-        11,
-        12
-      ]
-    }
-  ],
-  "courses": [
-    {
-      "id": "1",
-      "name": "Artistic Expression",
-      "description": "Encouraging creativity through art and crafts",
-      "imageLink": "https://img.freepik.com/premium-photo/vibrant-art-class-with-children-working-different-art-projects-generated-by-ai_930337-100.jpg?w=1380"
+      "courseId": 2,
+      "title": "Online Art and Craft Course for Kids",
+      "description": "Get creative with colors with this Art and Craft course!",
+      "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018542.webp",
+      "course_price": 24.99,
+      "course_age_group": "6-8 years",
+      "course_duration": "6 weeks",
+      "category": "Music and Arts"
     },
     {
-      "id": "2",
-      "name": "Nature Exploration",
-      "description": "Exploring the wonders of nature and outdoor activities",
-      "imageLink": "https://example.com/nature_exploration.jpg"
+      "courseId": 3,
+      "title": "Online Public Speaking Course for Kids",
+      "description": "Improve confidence and communication skills with this beginner's public speaking course.",
+      "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660281459.webp",
+      "course_price": 29.99,
+      "course_age_group": "8-10 years",
+      "course_duration": "8 weeks",
+      "category": "Science and Exploration"
     },
     {
-      "id": "3",
-      "name": "Science Adventures",
-      "description": "Hands-on experiments to spark scientific curiosity",
-      "imageLink": "https://example.com/science_adventures.jpg"
+      "courseId": 4,
+      "title": "Online Chess Course for Kids",
+      "description": "Chess: strengthening the child's mind from a young age!",
+      "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660280975.webp",
+      "course_price": 22.99,
+      "course_age_group": "7-9 years",
+      "course_duration": "5 weeks",
+      "category": "Science and Exploration"
     },
     {
-      "id": "4",
-      "name": "Sports and Fitness",
-      "description": "Fun outdoor games and activities for physical development",
-      "imageLink": "https://example.com/sports_and_fitness.jpg"
+      "courseId": 5,
+      "title": "Online Bollywood Dance Course for Kids",
+      "description": "Learn to dance like a star on the Latest Bollywood Hits!",
+      "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018153.webp",
+      "course_price": 27.99,
+      "course_age_group": "6-10 years",
+      "course_duration": "7 weeks",
+      "category": "Music and Arts"
     },
     {
-      "id": "5",
-      "name": "Math Mania",
-      "description": "Engaging math challenges and puzzles",
-      "imageLink": "https://previews.123rf.com/images/nadezhda1906/nadezhda19061801/nadezhda1906180100133/93625229-kids-learning-numbers-mental-arithmetic-abacus-calculation.jpg"
+      "courseId": 6,
+      "title": "Online Keyboard And Piano Course for Kids",
+      "description": "Enter the world of Music and play magical tunes on Piano!",
+      "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660363720.webp",
+      "course_price": 34.99,
+      "course_age_group": "9-12 years",
+      "course_duration": "10 weeks",
+      "category": "Music and Arts"
     },
     {
-      "id": "6",
-      "name": "Harvest Celebration",
-      "description": "Learning about agriculture and seasonal festivities",
-      "imageLink": "https://example.com/harvest_celebration.jpg"
+      "courseId": 7,
+      "title": "Online Yoga Course for Kids",
+      "description": "Get Fit and Active with Our Online Yoga Course!",
+      "child_image": "https://d11vgh97fxk0wu.cloudfront.net/sidebar_image/1698822583.jpeg",
+      "course_price": 39.99,
+      "course_age_group": "8-12 years",
+      "course_duration": "6 weeks",
+      "category": "Health and Fitness"
     },
     {
-      "id": "7",
-      "name": "Storytelling Workshop",
-      "description": "Enhancing language skills through storytelling",
-      "imageLink": "https://example.com/storytelling_workshop.jpg"
+      "courseId": 8,
+      "title": "Healthy Habits Workshop",
+      "description": "Teach kids about the importance of a healthy lifestyle through games and activities.",
+      "child_image": "https://healthatworkcentre.org.uk/wp-content/uploads/2020/12/Healthy-habits-course-768x431.jpeg",
+      "course_price": 18.99,
+      "course_age_group": "6-9 years",
+      "course_duration": "4 weeks",
+      "category": "Health and Fitness"
     },
     {
-      "id": "8",
-      "name": "Botanical Garden Tour",
-      "description": "Exploring different plants and their habitats",
-      "imageLink": "https://example.com/botanical_garden_tour.jpg"
+      "courseId": 9,
+      "title": "Math Puzzles Challenge",
+      "description": "Stimulate logical thinking with a series of exciting math puzzles and challenges.",
+      "child_image": "https://www.shutterstock.com/shutterstock/photos/2256211569/display_1500/stock-photo-teacher-and-toddler-playing-with-maths-puzzle-game-sitting-on-table-at-kindergarten-2256211569.jpg",
+      "course_price": 26.99,
+      "course_age_group": "9-11 years",
+      "course_duration": "8 weeks",
+      "category": "Science and Exploration"
     },
     {
-      "id": "9",
-      "name": "Music and Rhythm",
-      "description": "Introduction to music and rhythm through fun activities",
-      "imageLink": "https://example.com/music_and_rhythm.jpg"
+      "courseId": 10,
+      "title": "Online Science Experiments Extravaganza",
+      "description": "Discover the wonders of science through exciting hands-on experiments.",
+      "child_image": "https://img.freepik.com/premium-photo/science-education-concept-boy-doing-science-experiments_191555-2218.jpg?size=626&ext=jpg&ga=GA1.1.1126098393.1705672265&semt=ais",
+      "course_price": 32.99,
+      "course_age_group": "8-10 years",
+      "course_duration": "6 weeks",
+      "category": "Science and Exploration"
     },
     {
-      "id": "10",
-      "name": "Water Play",
-      "description": "Creative water-based activities for summer fun",
-      "imageLink": "https://example.com/water_play.jpg"
+      "courseId": 11,
+      "title": "Nature Discovery Adventure",
+      "description": "Explore the beauty of nature with guided outdoor adventures and exploration.",
+      "child_image": "https://scontent.fagr1-2.fna.fbcdn.net/v/t1.6435-9/171335980_3853047221454274_5980361153636912240_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=k70jygq8TU0AX8BjCqc&_nc_ht=scontent.fagr1-2.fna&oh=00_AfAiKF2XeJAdyOUZ15KtkBqQ2AhH8wbLDdHfMXRg-XjlTg&oe=65D1D5BF",
+      "course_price": 28.99,
+      "course_age_group": "7-9 years",
+      "course_duration": "5 weeks",
+      "category": "Nature and Environment"
     },
     {
-      "id": "11",
-      "name": "Coding for Kids",
-      "description": "Basic coding concepts for young minds",
-      "imageLink": "https://example.com/coding_for_kids.jpg"
+      "courseId": 12,
+      "title": "Creative Storytelling Workshop",
+      "description": "Spark imagination and creativity through interactive storytelling sessions.",
+      "child_image": "https://c8.alamy.com/comp/GEGAAM/woman-teachers-telling-story-to-students-occupation-profession-back-GEGAAM.jpg",
+      "course_price": 23.99,
+      "course_age_group": "6-8 years",
+      "course_duration": "4 weeks",
+      "category": "Music and Arts"
     },
     {
-      "id": "12",
-      "name": "Autumn Nature Walk",
-      "description": "Observing and learning about changes in nature during fall",
-      "imageLink": "https://example.com/autumn_nature_walk.jpg"
+      "courseId": 13,
+      "title": "Adventures in Space: Junior Astronauts",
+      "description": "Embark on a cosmic journey to explore the wonders of space and become junior astronauts.",
+      "child_image": "https://media.istockphoto.com/id/684098474/photo/little-girl-in-space-suit.jpg?s=612x612&w=0&k=20&c=r18U4dACrhpnp5b5yXS76lbOZdH5qTD6wd_f4g1Mhm8=",
+      "course_price": 36.99,
+      "course_age_group": "9-12 years",
+      "course_duration": "8 weeks",
+      "category": "Science and Exploration"
+    },
+    {
+      "courseId": 14,
+      "title": "Dinosaur Discovery Expedition",
+      "description": "Travel back in time to the age of dinosaurs and engage in thrilling dino-themed activities.",
+      "child_image": "https://m.media-amazon.com/images/I/61nRXpuXN5L._AC_UF894,1000_QL80_.jpg",
+      "course_price": 31.99,
+      "course_age_group": "6-8 years",
+      "course_duration": "6 weeks",
+      "category": "Science and Exploration"
+    },
+    {
+      "courseId": 15,
+      "title": "Junior Marine Biologist Adventure",
+      "description": "Dive into the fascinating world of marine life and become a junior marine biologist.",
+      "child_image": "https://media.istockphoto.com/id/950968846/photo/girl-with-dolphin-and-animal-trainer-in-water.jpg?s=612x612&w=0&k=20&c=db93KtccPbJCwYRJDNGOPUGQXtPxbdndns1cBxgA0ac=",
+      "course_price": 42.99,
+      "course_age_group": "8-10 years",
+      "course_duration": "10 weeks",
+      "category": "Science and Exploration"
+    },
+    {
+      "courseId": 16,
+      "title": "Robotics and Coding Exploration",
+      "description": "Build and program robots in this exciting exploration of robotics and coding.",
+      "child_image": "https://brightchamps.com/blog/wp-content/uploads/2022/05/Kids-Robitics-1024x684.webp",
+      "course_price": 38.99,
+      "course_age_group": "10-12 years",
+      "course_duration": "8 weeks",
+      "category": "Technology and Coding"
+    },
+    {
+      "courseId": 17,
+      "title": "Junior Chef Culinary Experience",
+      "description": "Unleash the inner chef with hands-on cooking activities and culinary adventures.",
+      "child_image": "https://www.shutterstock.com/image-photo/strong-handsome-cheerful-darkhaired-little-260nw-1034042665.jpg",
+      "course_price": 29.99,
+      "course_age_group": "7-9 years",
+      "course_duration": "5 weeks",
+      "category": "Health and Fitness"
+    },
+    {
+      "courseId": 18,
+      "title": "Artificial Intelligence for Kids",
+      "description": "Introduction to the fascinating world of Artificial Intelligence in a kid-friendly way.",
+      "child_image": "https://www.cio.com/wp-content/uploads/2023/05/child-coder_boy-with-computer_gaming_children-laptop-100798469-orig-1.jpg?quality=50&strip=all&w=1024",
+      "course_price": 45.99,
+      "course_age_group": "11-14 years",
+      "course_duration": "10 weeks",
+      "category": "Technology and Coding"
+    },
+    {
+      "courseId": 19,
+      "title": "Wildlife Safari Expedition",
+      "description": "Embark on a virtual wildlife safari and learn about animals from around the world.",
+      "child_image": "https://www.shutterstock.com/image-vector/adventures-jungle-safari-children-vector-260nw-1717959919.jpg",
+      "course_price": 34.99,
+      "course_age_group": "8-11 years",
+      "course_duration": "7 weeks",
+      "category": "Nature and Environment"
+    },
+    {
+      "courseId": 20,
+      "title": "Magical Science Potions",
+      "description": "Enter the world of magical science with enchanting potion-making experiments.",
+      "child_image": "https://m.media-amazon.com/images/I/91DVUyoUIML._AC_UF1000,1000_QL80_.jpg",
+      "course_price": 27.99,
+      "course_age_group": "6-9 years",
+      "course_duration": "4 weeks",
+      "category": "Science and Exploration"
+    },
+    {
+      "courseId": 21,
+      "title": "Exploring Ancient Civilizations",
+      "description": "Journey through history to explore the mysteries of ancient civilizations.",
+      "child_image": "https://www.shutterstock.com/image-photo/cute-young-girl-exploring-ancient-600nw-1339829222.jpg",
+      "course_price": 39.99,
+      "course_age_group": "9-12 years",
+      "course_duration": "8 weeks",
+      "category": "History and Culture"
+    },
+    {
+      "courseId": 22,
+      "title": "Space Art and Creativity",
+      "description": "Combine art and space exploration in this creative and cosmic course.",
+      "child_image": "https://c8.alamy.com/comp/2MT13Y1/cartoon-kid-space-explorer-art-for-artist-creativity-and-inspiration-2MT13Y1.jpg",
+      "course_price": 32.99,
+      "course_age_group": "7-10 years",
+      "course_duration": "6 weeks",
+      "category": "Science and Exploration"
+    },
+    {
+      "courseId": 23,
+      "title": "Digital Storytelling Adventure",
+      "description": "Learn the art of digital storytelling with interactive and multimedia activities.",
+      "child_image": "https://3.bp.blogspot.com/-oSUMx6VYyN0/WW0vziA5GBI/AAAAAAAAQhQ/tUVl_tO2qEIttdXfrQbDueDU0OpqbJIXgCEwYBhgL/s1600/storytelling%2Band%2Bcoding%2Bwith%2Bscratch%2Bslider%2Bpic.png",
+      "course_price": 36.99,
+      "course_age_group": "8-11 years",
+      "course_duration": "7 weeks",
+      "category": "Technology and Coding"
+    },
+    {
+      "courseId": 24,
+      "title": "Junior Paleontologist Excursion",
+      "description": "Embark on a journey to uncover the secrets of prehistoric life as a junior paleontologist.",
+      "child_image": "https://www.nps.gov/subjects/fossils/images/JR-PALEO.png",
+      "course_price": 42.99,
+      "course_age_group": "9-12 years",
+      "course_duration": "10 weeks",
+      "category": "Science and Exploration"
+    },
+    {
+      "courseId": 25,
+      "title": "Outdoor Survival Skills",
+      "description": "Equip kids with essential outdoor survival skills through exciting hands-on activities.",
+      "child_image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51AlOQCidkL.jpg",
+      "course_price": 29.99,
+      "course_age_group": "10-14 years",
+      "course_duration": "6 weeks",
+      "category": "Health and Fitness"
+    },
+    {
+      "courseId": 26,
+      "title": "Junior Environmental Scientist",
+      "description": "Explore the environment and learn about sustainability as a junior environmental scientist.",
+      "child_image": "https://i0.wp.com/www.anspblog.org/wp-content/uploads/2022/02/champlin-cover-1200.jpg?resize=840%2C418&ssl=1",
+      "course_price": 35.99,
+      "course_age_group": "8-11 years",
+      "course_duration": "8 weeks",
+      "category": "Nature and Environment"
+    },
+    {
+      "courseId": 27,
+      "title": "Space Math Adventures",
+      "description": "Integrate math into space exploration with exciting space-themed math challenges.",
+      "child_image": "https://m.media-amazon.com/images/I/51ndYcYYiQL.jpg",
+      "course_price": 26.99,
+      "course_age_group": "7-9 years",
+      "course_duration": "5 weeks",
+      "category": "Science and Exploration"
+    },
+    {
+      "courseId": 28,
+      "title": "Creative Coding for Kids",
+      "description": "Learn the basics of coding through creative and interactive coding projects.",
+      "child_image": "https://img.freepik.com/free-vector/girl-using-laptop-with-binary-code_1308-114505.jpg?size=626&ext=jpg&ga=GA1.1.1126098393.1705672265&semt=ais",
+      "course_price": 31.99,
+      "course_age_group": "8-12 years",
+      "course_duration": "6 weeks",
+      "category": "Technology and Coding"
+    },
+    {
+      "courseId": 29,
+      "title": "Junior Architectural Design",
+      "description": "Unleash creativity and design skills through hands-on architectural projects.",
+      "child_image": "https://media.istockphoto.com/id/537455615/photo/team-of-little-engineers.jpg?s=612x612&w=0&k=20&c=veUDBQPVw1dGIMxVMX-eqN_GEM3kVsNqEbW_y7TyRfM=",
+      "course_price": 38.99,
+      "course_age_group": "10-14 years",
+      "course_duration": "8 weeks",
+      "category": "Technology and Coding"
+    },
+    {
+      "courseId": 30,
+      "title": "Virtual Reality Explorers",
+      "description": "Embark on virtual reality adventures and explore different immersive environments.",
+      "child_image": "https://media.istockphoto.com/id/621694778/photo/browsing-a-virtual-world-in-virtual-reality-glasses.jpg?s=612x612&w=0&k=20&c=ldWr1yPeU0jij5HrTYmE_yvsREmt_4z-_TVZlxjr7oQ=",
+      "course_price": 44.99,
+      "course_age_group": "11-14 years",
+      "course_duration": "10 weeks",
+      "category": "Technology and Coding"
     }
   ],
   "programs": [
     {
-      "id": "1",
-      "userIds": [
-        1
-      ],
-      "season": "Spring",
-      "indoorCourseId": 1,
-      "outdoorCourseId": 2,
-      "imageLink": "https://example.com/spring_program.jpg"
+      "id": 1,
+      "image": "program1.jpg",
+      "title": "Language Learners",
+      "description": "Explore the world of languages through fun and interactive activities.",
+      "courseIds": [1, 2, 3],
+      "duration": "8 weeks",
+      "preferredSeason": "summer",
+      "activity": "indoor",
+      "rating": 4.5
     },
     {
-      "id": "2",
-      "userIds": [
-        1
-      ],
-      "season": "Summer",
-      "indoorCourseId": 3,
-      "outdoorCourseId": 4,
-      "imageLink": "https://example.com/summer_program.jpg"
+      "id": 2,
+      "image": "program2.jpg",
+      "title": "Math Magic",
+      "description": "Discover the magic of numbers and mathematical concepts in an engaging way.",
+      "courseIds": [4, 5, 6],
+      "duration": "10 weeks",
+      "preferredSeason": "winter",
+      "activity": "indoor",
+      "rating": 4.8
     },
     {
-      "id": "3",
-      "userIds": [
-        1
-      ],
-      "season": "Fall",
-      "indoorCourseId": 5,
-      "outdoorCourseId": 6,
-      "imageLink": "https://example.com/fall_program.jpg"
+      "id": 3,
+      "image": "program3.jpg",
+      "title": "Science Explorers",
+      "description": "Embark on exciting journeys to explore the wonders of science and nature.",
+      "courseIds": [7, 8, 9],
+      "duration": "12 weeks",
+      "preferredSeason": "rainy",
+      "activity": "outdoor",
+      "rating": 4.2
     },
     {
-      "id": "4",
-      "userIds": [
-        2
-      ],
-      "season": "Spring",
-      "indoorCourseId": 7,
-      "outdoorCourseId": 8,
-      "imageLink": "https://example.com/spring_program_user2.jpg"
+      "id": 4,
+      "image": "program4.jpg",
+      "title": "Creative Arts & Crafts",
+      "description": "Unleash your creativity with artistic projects and crafty adventures.",
+      "courseIds": [10, 11, 12],
+      "duration": "6 weeks",
+      "preferredSeason": "summer",
+      "activity": "indoor",
+      "rating": 4.6
     },
     {
-      "id": "5",
-      "userIds": [
-        2
-      ],
-      "season": "Summer",
-      "indoorCourseId": 9,
-      "outdoorCourseId": 10,
-      "imageLink": "https://example.com/summer_program_user2.jpg"
+      "id": 5,
+      "image": "program5.jpg",
+      "title": "Musical Melodies",
+      "description": "Learn the basics of music, instruments, and create your own tunes.",
+      "courseIds": [13, 14, 15],
+      "duration": "8 weeks",
+      "preferredSeason": "winter",
+      "activity": "indoor",
+      "rating": 4.7
     },
     {
-      "id": "6",
-      "userIds": [
-        2
-      ],
-      "season": "Fall",
-      "indoorCourseId": 11,
-      "outdoorCourseId": 12,
-      "imageLink": "https://example.com/fall_program_user2.jpg"
-    }
-  ],
+      "id": 6,
+      "image": "program6.jpg",
+      "title": "Dance Delight",
+      "description": "Explore different dance styles and express yourself through movement.",
+      "courseIds": [16, 17, 18],
+      "duration": "10 weeks",
+      "preferredSeason": "rainy",
+      "activity": "indoor",
+      "rating": 4.4
+    },
+    {
+      "id": 7,
+      "image": "program7.jpg",
+      "title": "Public Speaking Prodigy",
+      "description": "Develop effective communication skills and boost your confidence.",
+      "courseIds": [19, 20, 21],
+      "duration": "8 weeks",
+      "preferredSeason": "summer",
+      "activity": "indoor",
+      "rating": 4.9
+    },
+    {
+      "id": 8,
+      "image": "program8.jpg",
+      "title": "Reasoning Rangers",
+      "description": "Enhance logical thinking and problem-solving skills with exciting challenges.",
+      "courseIds": [22, 23, 24],
+      "duration": "12 weeks",
+      "preferredSeason": "winter",
+      "activity": "indoor",
+      "rating": 4.3
+    },
+    {
+      "id": 9,
+      "image": "program9.jpg",
+      "title": "Vocabulary Voyage",
+      "description": "Expand your word bank through engaging vocabulary-building activities.",
+      "courseIds": [25, 26, 27],
+      "duration": "6 weeks",
+      "preferredSeason": "rainy",
+      "activity": "indoor",
+      "rating": 4.7
+    },
+    {
+      "id": 10,
+      "image": "program10.jpg",
+      "title": "Game Gurus",
+      "description": "Dive into the world of strategic games and develop critical thinking skills.",
+      "courseIds": [28, 29, 30],
+      "duration": "10 weeks",
+      "preferredSeason": "summer",
+      "activity": "indoor",
+      "rating":4.5
+      }],
   "testimonials": [
     {
       "userId": 1,
