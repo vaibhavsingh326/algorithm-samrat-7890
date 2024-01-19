@@ -1,57 +1,57 @@
 
    const courses=[
       {
-        "title": "Fun with Numbers",
-        "description": "Learn basic arithmetic through engaging activities and games.",
-        "child_image": "fun_with_numbers.jpg",
+        "title": "Online Guitar Course for Kids",
+        "description": "Strike the strings of Guitar and unleash the Rockstar in you ...",
+        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp",
         "course_price": 19.99,
         "course_age_group": "5-7 years",
         "course_duration": "4 weeks"
       },
       {
-        "title": "Creative Storytelling",
-        "description": "Unleash your child's imagination through interactive storytelling sessions.",
-        "child_image": "creative_storytelling.jpg",
+        "title": "Online Art and Craft Course for Kids",
+        "description": "Get creative with colors with this Art and Craft course!",
+        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018542.webp",
         "course_price": 24.99,
         "course_age_group": "6-8 years",
         "course_duration": "6 weeks"
       },
       {
-        "title": "Exploring Science Wonders",
-        "description": "Discover the wonders of the natural world with fun experiments and activities.",
-        "child_image": "science_wonders.jpg",
+        "title": "Online Public Speaking Course for Kids",
+        "description": "Improve confidence and communication skills with this beginn ...",
+        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660281459.webp",
         "course_price": 29.99,
         "course_age_group": "8-10 years",
         "course_duration": "8 weeks"
       },
       {
-        "title": "Artistic Adventures",
-        "description": "Encourage creativity through various art forms like drawing, painting, and crafts.",
-        "child_image": "artistic_adventures.jpg",
+        "title": "Online Chess Course for Kids",
+        "description": "Chess: strengthening the child's mind from a young age!",
+        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660280975.webp",
         "course_price": 22.99,
         "course_age_group": "7-9 years",
         "course_duration": "5 weeks"
       },
       {
-        "title": "Music Magic",
-        "description": "Introduce your child to the world of music with fun and interactive lessons.",
-        "child_image": "music_magic.jpg",
+        "title": "Online Bollywood Dance Course for Kids",
+        "description": "Learn to dance like a star on the Latest Bollywood Hits!",
+        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018153.webp",
         "course_price": 27.99,
         "course_age_group": "6-10 years",
         "course_duration": "7 weeks"
       },
       {
-        "title": "Outdoor Explorers",
-        "description": "Foster a love for nature through outdoor adventures and nature-related activities.",
-        "child_image": "outdoor_explorers.jpg",
+        "title": "Online Keyboard And Piano Course for Kids",
+        "description": "Enter the world of Music and play magical tunes on Piano!",
+        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660363720.webp",
         "course_price": 34.99,
         "course_age_group": "9-12 years",
         "course_duration": "10 weeks"
       },
       {
-        "title": "Coding for Kids",
-        "description": "Introduction to basic coding concepts in a fun and interactive way.",
-        "child_image": "coding_for_kids.jpg",
+        "title": "Online Yoga Course for Kids",
+        "description": "Get Fit and Active with Our Online Yoga Course!",
+        "child_image": "https://d11vgh97fxk0wu.cloudfront.net/sidebar_image/1698822583.jpeg",
         "course_price": 39.99,
         "course_age_group": "8-12 years",
         "course_duration": "6 weeks"
@@ -59,7 +59,7 @@
       {
         "title": "Healthy Habits Workshop",
         "description": "Teach kids about the importance of a healthy lifestyle through games and activities.",
-        "child_image": "healthy_habits.jpg",
+        "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp",
         "course_price": 18.99,
         "course_age_group": "6-9 years",
         "course_duration": "4 weeks"
@@ -67,22 +67,110 @@
       {
         "title": "Math Puzzles Challenge",
         "description": "Stimulate logical thinking with a series of exciting math puzzles and challenges.",
-        "child_image": "math_puzzles.jpg",
+        "child_image": "https://media.istockphoto.com/id/1498270459/photo/asian-girls-play-with-puzzles-learn-math-education-concept.jpg?s=612x612&w=0&k=20&c=TUJ0noG4G8ImxB42PRUsuvy096g8iGrA6aCPoDwStw4=",
         "course_price": 26.99,
         "course_age_group": "9-11 years",
         "course_duration": "8 weeks"
-      },
-      {
-        "title": "Language Explorers",
-        "description": "Explore the world of language through games, stories, and language-building activities.",
-        "child_image": "language_explorers.jpg",
-        "course_price": 31.99,
-        "course_age_group": "7-10 years",
-        "course_duration": "6 weeks"
       }
+
     ]
   
 
-courses.forEach(course => {
- let card = document.createElement("div");
-});
+  //   <div class="card">
+  //   <div class="card-img">
+  //     <img
+  //       src="https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp"
+  //       alt=""
+  //     />
+  //   </div>
+  //   <div class="card-body">
+  //     <div class="course-name">
+  //       <h3>Online Guitar Course for Kids</h3>
+  //       <p class="course-details">
+  //         Strike the strings of Guitar and unleash the Rockstar in you ...
+  //       </p>
+  //     </div>
+
+  //     <div class="price">
+  //       ₹ 8000 <span>for 3 months ( 24 classes)</span>
+  //     </div>
+
+  //     <div class="desc">
+  //       <p class="Age-group">Age group: <span>5-14 Years</span></p>
+  //       <p class="Course">
+  //         Course duration:
+  //         <span>24 sessions in 3 months for beginner level</span>
+  //       </p>
+  //       <p class="Format">
+  //         Format: <span>Group or Individual classes</span>
+  //       </p>
+  //       <button class="button">Book Free Demo</button>
+  //     </div>
+  //   </div>
+  // </div>
+
+  function createCard(course) {
+    const cardContainer = document.getElementById('course-container');
+
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const cardImg = document.createElement('div');
+    cardImg.classList.add('card-img');
+    const img = document.createElement('img');
+    img.src = course.child_image;
+    img.alt = course.title;
+    cardImg.appendChild(img);
+
+    const cardBody = document.createElement('div');
+    cardBody.classList.add('card-body');
+
+    const courseName = document.createElement('div');
+    courseName.classList.add('course-name');
+    const h3 = document.createElement('h3');
+    h3.textContent = course.title;
+    const courseDetails = document.createElement('p');
+    courseDetails.classList.add('course-details');
+    courseDetails.textContent = course.description;
+    courseName.appendChild(h3);
+    courseName.appendChild(courseDetails);
+
+    const price = document.createElement('div');
+    price.classList.add('price');
+    price.textContent = `₹ ${course.course_price} for ${course.course_duration}`;
+
+    const desc = document.createElement('div');
+    desc.classList.add('desc');
+    const ageGroup = document.createElement('p');
+    ageGroup.classList.add('Age-group');
+    ageGroup.textContent = `Age group: ${course.course_age_group}`;
+    const courseDuration = document.createElement('p');
+    courseDuration.classList.add('Course');
+    courseDuration.textContent = `Course duration: ${course.course_duration}`;
+    const format = document.createElement('p');
+    format.classList.add('Format');
+    format.textContent = `Format: Group or Individual classes`;
+
+    const button = document.createElement('button');
+    button.classList.add('button');
+    button.textContent = 'Book Free Demo';
+
+    desc.appendChild(ageGroup);
+    desc.appendChild(courseDuration);
+    desc.appendChild(format);
+    desc.appendChild(button);
+
+    cardBody.appendChild(courseName);
+    cardBody.appendChild(price);
+    cardBody.appendChild(desc);
+
+    card.appendChild(cardImg);
+    card.appendChild(cardBody);
+
+    cardContainer.appendChild(card);
+  }
+
+  // Create cards for each course
+  courses.forEach(course => {
+    createCard(course);
+  });

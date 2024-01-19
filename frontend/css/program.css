@@ -1,8 +1,10 @@
 .card-list{
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    /* grid-template-columns:repeat(3,1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     /* grid-template-rows: auto; */
-    gap: 10px;
+    gap: 18px;
+    flex-wrap: wrap;
  
 
 }
@@ -13,9 +15,16 @@
     border-radius: 60px;
     margin-bottom: 50px;
     position: relative;
-    width: 100%
+    width: 100%;
+    
     
 }
+.card:hover {
+    background-color: #f5f5f5; /* Change the background color on hover */
+    box-shadow: 30px 30px 65px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow on hover */
+    transform: scale(1.03); /* Slightly scale up on hover */
+}
+
 .card-img{
     position: relative;
     width: 100%;
@@ -23,6 +32,9 @@
     border-radius: 50px;
     
 }
+
+
+
 img{
     max-width: 100%;
     height: auto;
@@ -43,15 +55,18 @@ img{
     font-size: 18px;
     line-height: 35px;
 }
-
+h3{
+    color: #3877bb;
+}
 .price{
-    font-size: 22px;
+    font-size: 25px;
     line-height: 27px;
     width: 69%;
     color: #96296e;
     font-family: 'Avenir LT Pro 65';
     font-weight: 900;
-    margin-right: 5px;
+    /* margin-right: 5px; */
+    text-align: center;
 }
 
 
@@ -79,11 +94,19 @@ button{
     transition: 0.3s ease all;
     font-family: 'Avenir LT Pro';
     font-style: normal;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 button:hover{
     background-color: #3877bb;
+    box-shadow: rgba(56, 119, 187, 0.54) 8px 8px 0;
 }
 
 p{
     font-size: medium;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-list {
+        grid-template-columns: 1fr;
+    }
 }
