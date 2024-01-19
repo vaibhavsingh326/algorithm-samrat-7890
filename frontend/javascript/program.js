@@ -1,84 +1,31 @@
 
-  //  const courses=[
-  //     {
-  //       "title": "Online Guitar Course for Kids",
-  //       "description": "Strike the strings of Guitar and unleash the Rockstar in you ...",
-  //       "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp",
-  //       "course_price": 19.99,
-  //       "course_age_group": "5-7 years",
-  //       "course_duration": "4 weeks"
-  //     },
-  //     {
-  //       "title": "Online Art and Craft Course for Kids",
-  //       "description": "Get creative with colors with this Art and Craft course!",
-  //       "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018542.webp",
-  //       "course_price": 24.99,
-  //       "course_age_group": "6-8 years",
-  //       "course_duration": "6 weeks"
-  //     },
-  //     {
-  //       "title": "Online Public Speaking Course for Kids",
-  //       "description": "Improve confidence and communication skills with this beginn ...",
-  //       "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660281459.webp",
-  //       "course_price": 29.99,
-  //       "course_age_group": "8-10 years",
-  //       "course_duration": "8 weeks"
-  //     },
-  //     {
-  //       "title": "Online Chess Course for Kids",
-  //       "description": "Chess: strengthening the child's mind from a young age!",
-  //       "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660280975.webp",
-  //       "course_price": 22.99,
-  //       "course_age_group": "7-9 years",
-  //       "course_duration": "5 weeks"
-  //     },
-  //     {
-  //       "title": "Online Bollywood Dance Course for Kids",
-  //       "description": "Learn to dance like a star on the Latest Bollywood Hits!",
-  //       "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018153.webp",
-  //       "course_price": 27.99,
-  //       "course_age_group": "6-10 years",
-  //       "course_duration": "7 weeks"
-  //     },
-  //     {
-  //       "title": "Online Keyboard And Piano Course for Kids",
-  //       "description": "Enter the world of Music and play magical tunes on Piano!",
-  //       "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660363720.webp",
-  //       "course_price": 34.99,
-  //       "course_age_group": "9-12 years",
-  //       "course_duration": "10 weeks"
-  //     },
-  //     {
-  //       "title": "Online Yoga Course for Kids",
-  //       "description": "Get Fit and Active with Our Online Yoga Course!",
-  //       "child_image": "https://d11vgh97fxk0wu.cloudfront.net/sidebar_image/1698822583.jpeg",
-  //       "course_price": 39.99,
-  //       "course_age_group": "8-12 years",
-  //       "course_duration": "6 weeks"
-  //     },
-  //     {
-  //       "title": "Healthy Habits Workshop",
-  //       "description": "Teach kids about the importance of a healthy lifestyle through games and activities.",
-  //       "child_image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659016494.webp",
-  //       "course_price": 18.99,
-  //       "course_age_group": "6-9 years",
-  //       "course_duration": "4 weeks"
-  //     },
-  //     {
-  //       "title": "Math Puzzles Challenge",
-  //       "description": "Stimulate logical thinking with a series of exciting math puzzles and challenges.",
-  //       "child_image": "https://media.istockphoto.com/id/1498270459/photo/asian-girls-play-with-puzzles-learn-math-education-concept.jpg?s=612x612&w=0&k=20&c=TUJ0noG4G8ImxB42PRUsuvy096g8iGrA6aCPoDwStw4=",
-  //       "course_price": 26.99,
-  //       "course_age_group": "9-11 years",
-  //       "course_duration": "8 weeks"
-  //     }
+  // sort Data Based on Course 
+let AllCourse = document.getElementById("All-course");
+let MusicCourse = document.getElementById("MUSIC-course");
+let ArtCourse = document.getElementById("ART-course");
+let PublicSpeaking = document.getElementById("PUBLIC-SPEAKING-course");
+let ChessCourse  = document.getElementById("CHESS-course");
+let DanceCourse = document.getElementById("DANCE-course");
+let YogaCourse = document.getElementById("YOGA-course");
 
-  //   ]
+const cardContainer = document.getElementById('course-container');
+
+// BaseURL 
+let url = `http://localhost:9090/courses`
+
+
+MusicCourse.addEventListener("click",()=>{
+  FetchData(url,`category=Music and Arts`)
+})
   
-  let url = `https://child-edu-backend.onrender.com/courses`
+ArtCourse.addEventListener("click",()=>{
+  FetchData(url,`category=Music and Arts`)
+})
+  
   FetchData(url)
-    async function FetchData(url){
-      let res =  await fetch(`${url}`)
+    async function FetchData(url,para=""){
+      cardContainer.innerHTML = ""
+      let res =  await fetch(`${url}?${para}`)
       let data = await res.json();
       console.log(data)
       population(data)
@@ -93,8 +40,7 @@
 
 
   function createCard(course) {
-    const cardContainer = document.getElementById('course-container');
-
+    // const cardContainer = document.getElementById('course-container');
     const card = document.createElement('div');
     card.classList.add('card');
 
