@@ -111,6 +111,27 @@ HistoryAndCulture.addEventListener("click",()=>{
     button.classList.add('course-btn');
     button.textContent = 'Buy Now';
 
+    
+
+
+
+button.addEventListener("click", () => {
+  let obj = {
+    courseName: course.title,
+    id: course.courseId,
+    price: course.course_price,
+  };
+  console.log(obj)
+  
+
+ 
+
+  // arr.push(obj);
+
+  localStorage.setItem("coursedetails", JSON.stringify(obj));
+});
+
+
     desc.appendChild(ageGroup);
     desc.appendChild(courseDuration);
     desc.appendChild(category);
