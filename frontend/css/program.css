@@ -28,14 +28,13 @@
     width: 100%;
     vertical-align: bottom;
     border-radius: 50px;
-    
 }
 
 
 
 img{
     max-width: 100%;
-    height: auto;
+    height: 350px;
     border-radius: 60px;
     width: 100%;
 }
@@ -149,10 +148,6 @@ li{
 #All-course{
     /* box-shadow: rgba(56, 119, 187, 0.54) 8px 8px 0; */
     background-color: #3877bb;
-}
-#MUSIC-course{
-  background-color: #BDE0FE;
-  color: black;
 }
 #ART-course{
     background-color: #CDB4DB;

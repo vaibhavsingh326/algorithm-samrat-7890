@@ -2,25 +2,52 @@
   // sort Data Based on Course 
 let AllCourse = document.getElementById("All-course");
 let MusicCourse = document.getElementById("MUSIC-course");
-let ArtCourse = document.getElementById("ART-course");
-let PublicSpeaking = document.getElementById("PUBLIC-SPEAKING-course");
-let ChessCourse  = document.getElementById("CHESS-course");
-let DanceCourse = document.getElementById("DANCE-course");
-let YogaCourse = document.getElementById("YOGA-course");
+let Science = document.getElementById("Science");
+let Health = document.getElementById("Health");
+let Nature  = document.getElementById("Nature");
+let Coding = document.getElementById("Coding");
+let HistoryAndCulture = document.getElementById("History");
 
 const cardContainer = document.getElementById('course-container');
 
 // BaseURL 
 let url = `http://localhost:9090/courses`
 
+AllCourse.addEventListener("click",()=>{
+  alert("hello are sure")
+  FetchData(url)
+})
 
 MusicCourse.addEventListener("click",()=>{
+  alert("hello are sure")
   FetchData(url,`category=Music and Arts`)
+})
+
+Science.addEventListener("click",()=>{
+  alert("hello are you sure")
+  FetchData(url,`category=Science and Exploration`)
 })
   
-ArtCourse.addEventListener("click",()=>{
-  FetchData(url,`category=Music and Arts`)
+Health.addEventListener("click",()=>{
+  alert("hello are you sure")
+  FetchData(url,`category=Health and Fitness`)
 })
+
+Nature.addEventListener("click",()=>{
+  alert("hello are you sure");
+  FetchData(url,`category=Nature and Environment`)
+})
+
+Coding.addEventListener("click",()=>{
+  alert("hello are you sure!");
+  FetchData(url,`category=Technology and Coding`)
+})
+
+HistoryAndCulture.addEventListener("click",()=>{
+  alert("hello are sure ");
+  FetchData(url,`category=History and Culture`)
+})
+
   
   FetchData(url)
     async function FetchData(url,para=""){
