@@ -11,40 +11,33 @@ let HistoryAndCulture = document.getElementById("History");
 const cardContainer = document.getElementById('course-container');
 
 // BaseURL 
-let url = `http://localhost:9090/courses`
+let url = `https://child-edu-backend.onrender.com/courses`
 
 AllCourse.addEventListener("click",()=>{
-  alert("hello are sure")
   FetchData(url)
 })
 
 MusicCourse.addEventListener("click",()=>{
-  alert("hello are sure")
   FetchData(url,`category=Music and Arts`)
 })
 
 Science.addEventListener("click",()=>{
-  alert("hello are you sure")
   FetchData(url,`category=Science and Exploration`)
 })
   
 Health.addEventListener("click",()=>{
-  alert("hello are you sure")
   FetchData(url,`category=Health and Fitness`)
 })
 
 Nature.addEventListener("click",()=>{
-  alert("hello are you sure");
   FetchData(url,`category=Nature and Environment`)
 })
 
 Coding.addEventListener("click",()=>{
-  alert("hello are you sure!");
   FetchData(url,`category=Technology and Coding`)
 })
 
 HistoryAndCulture.addEventListener("click",()=>{
-  alert("hello are sure ");
   FetchData(url,`category=History and Culture`)
 })
 
@@ -66,16 +59,18 @@ HistoryAndCulture.addEventListener("click",()=>{
   }
 
 
-  function createCard(course) {
+  function createCard(course){
     // const cardContainer = document.getElementById('course-container');
     const card = document.createElement('div');
     card.classList.add('card');
 
     const cardImg = document.createElement('div');
     cardImg.classList.add('card-img');
+
     const img = document.createElement('img');
     img.src = course.child_image;
     img.alt = course.title;
+    img.classList.add("course-img")
     cardImg.appendChild(img);
 
     const cardBody = document.createElement('div');
@@ -85,6 +80,8 @@ HistoryAndCulture.addEventListener("click",()=>{
     courseName.classList.add('course-name');
     const h3 = document.createElement('h3');
     h3.textContent = course.title;
+    h3.classList.add("course-title")
+    
     const courseDetails = document.createElement('p');
     courseDetails.classList.add('course-details');
     courseDetails.textContent = course.description;
@@ -111,8 +108,29 @@ HistoryAndCulture.addEventListener("click",()=>{
     category.textContent = `Category: ${course.category}`
 
     const button = document.createElement('button');
-    button.classList.add('button');
-    button.textContent = 'Book Free Demo';
+    button.classList.add('course-btn');
+    button.textContent = 'Buy Now';
+
+    
+
+
+
+button.addEventListener("click", () => {
+  let obj = {
+    courseName: course.title,
+    id: course.courseId,
+    price: course.course_price,
+  };
+  console.log(obj)
+  
+
+ 
+
+  // arr.push(obj);
+
+  localStorage.setItem("coursedetails", JSON.stringify(obj));
+});
+
 
     desc.appendChild(ageGroup);
     desc.appendChild(courseDuration);
