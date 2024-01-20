@@ -1,0 +1,131 @@
+.child {
+    height: 450px;
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    /* background-color: burlywood; */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .child img:nth-child(1) {
+    width: 250px;
+    height: 330px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30%;
+  }
+  
+  .child img:nth-child(2) {
+    height: 250px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5% 20%;
+    transform: rotate(7deg);
+  }
+  
+  .child img:nth-child(3) {
+    height: 250px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15% 25%;
+  }
+  
+  .pt {
+    width: 100%;
+    font-size: 90px;
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+  }
+  
+  .desc {
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+    /* background-color: beige; */
+  }
+  
+  .part1 {
+    width: 50%;
+    margin: auto;
+    /* background-color: red; */
+  
+    > img:nth-child(1) {
+      position: relative;
+      left: 10px;
+      bottom: 30px;
+      transform: rotate(-10deg);
+    }
+  
+    > img:nth-child(2) {
+      position: relative;
+      right: 30px;
+      transform: rotate(5deg);
+    }
+  
+    > img:nth-child(3) {
+      position: relative;
+      left: 100px;
+      bottom: 15px;
+      transform: rotate(-5deg);
+    }
+  }
+  
+  .part2 {
+    width: 50%;
+  
+    h2 {
+      font-family: "Comic Neue", cursive;
+      font-family: "Shadows Into Light", cursive;
+    }
+  
+    p {
+      width: 350px;
+      font-size: 15px;
+      font-family: "Comic Neue", cursive;
+      font-family: "Indie Flower", cursive;
+      font-family: "Shadows Into Light", cursive;
+    }
+  }
+  
+  @media only screen and (min-width: 340px) and (max-width: 720px) {
+    .child {
+      height: auto;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .child img {
+      width: 100%;
+      height: auto;
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+  
+    .desc {
+      margin-left: 0;
+      /* text-align: center; */
+    }
+  
+    .part1,
+    .part2 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .part1 img,
+    .part2 img {
+      width: 150px;
+      position: static;
+    }
+  
+    .part1> img:nth-child(2){
+      left: -5px; bottom: 20px;
+    }
+  
+    .part1> img:nth-child(3){
+      left: -10px;
+      transform: rotate(-5deg);
+    }
+  }
+  
