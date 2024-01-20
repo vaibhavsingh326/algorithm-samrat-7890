@@ -1,9 +1,9 @@
-* {
+/* * {
     padding: 0px;
     margin: 0px;
-  }
+  } */
   
-  .container {
+  .container{
     display: flex;
     justify-content: center;
     height: 60px;
@@ -17,6 +17,7 @@
     position: fixed;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
   }
   
   .navbar-inner {
@@ -159,6 +160,7 @@
   @media screen and (max-width: 768px) {
     .navbar {
       justify-content: space-between;
+      z-index: 1;
     }
     .hamburger-menu {
       display: block;
