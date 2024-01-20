@@ -129,6 +129,7 @@ server.post("/user/register", (req, res) => {
     firstname: req.body.firstname || "",
     lastname: req.body.lastname || "",
     createdAt: Date.now(),
+    age:req.body.age,
     id: newId,
   };
 
@@ -245,22 +246,30 @@ if(flag){
 
 server.post("/adminorders",(req,res)=>{
   if(
-    !req.body.storeId||
-    !req.body.product
+    !req.body.userId||
+    !req.body.order
     ){
       return res
       .status(400)
       .send("Bad request, requires username, password & email.");
     }
     db.read()
-
+    let largestId =0
     const adminorders = db.data.adminorders
-    const order = db.data.adminorders.indexOf(adminorders.find((w)=> w.userId===req.body.userId))
-    if(order ==-1){
-      db.data.adminorders.push({userId:req.body.userId,products:[req.body.product]})
-    }else{
-      db.data.adminorders[order].products.push(req.body.product)
+    adminorders.forEach(order=>{
+      if(order.id>largestId) largestId =order.id
+    })
+    let neworder ={
+      "id":largestId+1,
+      "orderDetails":req.body
     }
+    db.data.adminorders.push(req.body)
+    // const order = db.data.adminorders.indexOf(adminorders.find((w)=> w.userId===req.body.userId))
+    // if(order ==-1){
+    //   db.data.adminorders.push({userId:req.body.userId,products:[req.body.product]})
+    // }else{
+    //   db.data.adminorders[order].products.push(req.body.product)
+    // }
     
     // if(db.data.wishlist[`${req.body.userId}`]==undefined){
     //   db.data.wishlist[`${req.body.userId}`]=[req.body.product]
@@ -269,7 +278,7 @@ server.post("/adminorders",(req,res)=>{
     // }
     db.write();
 
-  res.status(201).send(req.body.product);
+  res.status(201).send(req.body);
 
 })
 
@@ -406,7 +415,7 @@ server.post("/orders",(req,res)=>{
 
 server.post("/admin/orders",(req,res)=>{
   if(
-    !req.body.storeId||
+    !req.body.userId||
     !req.body.order
     ){
       return res
@@ -532,51 +541,51 @@ server.post("/admin/orders",(req,res)=>{
 // })
 
 // registration logic
-server.post("/user/register", (req, res) => {
-  if (
-    !req.body ||
-    !req.body.password ||
-    !req.body.email
-  ) {
-    return res
-      .status(400)
-      .send("Bad request, requires username, password & email.");
-  }
+// server.post("/user/register", (req, res) => {
+//   if (
+//     !req.body ||
+//     !req.body.password ||
+//     !req.body.email
+//   ) {
+//     return res
+//       .status(400)
+//       .send("Bad request, requires username, password & email.");
+//   }
 
-  db.read();
-  const users = db.data.users;
-  let largestId = 0;
-  users.forEach((user) => {
-    if (user.id > largestId) largestId = user.id;
-  });
-  let flag =true
-  users.forEach((user) => {
-    if (user.email === req.body.email) flag = false;
-  });
+//   db.read();
+//   const users = db.data.users;
+//   let largestId = 0;
+//   users.forEach((user) => {
+//     if (user.id > largestId) largestId = user.id;
+//   });
+//   let flag =true
+//   users.forEach((user) => {
+//     if (user.email === req.body.email) flag = false;
+//   });
  
-if(flag){
+// if(flag){
 
-  const hashedPassword = bcrypt.hashSync(req.body.password, 10);
-  const newId = largestId + 1;
+//   const hashedPassword = bcrypt.hashSync(req.body.password, 10);
+//   const newId = largestId + 1;
   
-  const newUserData = {
-    password: hashedPassword,
-    email: req.body.email,
-    firstname: req.body.firstname || "",
-    lastname: req.body.lastname || "",
-    createdAt: Date.now(),
-    id: newId,
-  };
+//   const newUserData = {
+//     password: hashedPassword,
+//     email: req.body.email,
+//     firstname: req.body.firstname || "",
+//     lastname: req.body.lastname || "",
+//     createdAt: Date.now(),
+//     id: newId,
+//   };
 
-  db.data.users.push(newUserData);
+//   db.data.users.push(newUserData);
 
-  db.write();
+//   db.write();
 
-  res.status(201).send(newUserData);
-}else {
-  res.status(201).send("Email already in use")
-}
-});
+//   res.status(201).send(newUserData);
+// }else {
+//   res.status(201).send("Email already in use")
+// }
+// });
 
 // login/sign in logic
 server.post("/user/login", (req, res) => {
