@@ -2,9 +2,11 @@
 body{
     background-image: url("/frontend/css/images/WhatsApp\ Image\ 2024-01-20\ at\ 10.54.52\ PM.jpeg");
     background-size: cover;
-    background-position-y: center;
+    /* background-position-y: center; */
     padding: 0;
     margin: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .background{
@@ -120,4 +122,10 @@ input{
 }
 .social i{
   margin-right: 4px;
+}
+
+@media screen and (max-witdh:580px){
+    body{
+        height: 120vh;
+    }
 }
