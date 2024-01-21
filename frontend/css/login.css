@@ -5,6 +5,8 @@ body{
     background-position-y: center;
     padding: 0;
     margin: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 .background{
     width: 430px;
@@ -117,4 +119,9 @@ input{
 }
 .social i{
   margin-right: 4px;
+}
+@media screen and (max-witdh:580px){
+    body{
+        height: 120vh;
+    }
 }
