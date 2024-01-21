@@ -9,7 +9,7 @@
 <body>
     <div class="payment-container">
         <h1 style="text-align:center">PAYMENT DETAILS</h1>
-       <div class="inner-payment-container">
+       <form class="inner-payment-container">
 
           <div class="payment-details">
            
@@ -21,7 +21,7 @@
                 </div>
                 <div>
                   
-                    <input type="email" id="email" name="email" placeholder="your email">
+                    <input type="email" id="email" name="email" placeholder="your email" required>
     
                 </div>
                <div>
@@ -71,33 +71,21 @@
                 </div>
             </div>
 
-
+        </address>
           </div>
           
           <div class="payment-items">
-            <div class="items">
-                <h2>course details<h2>
+            <div class="items" id="items">
+                <h2>course details</h2>
+                 
                     <div class="pay-items-details">
-                        <h4>course ID</h4>
-                        <p>1234</p>
+                     
                     </div>
-                    <div class="pay-items-details">
-                        <h4>course NAME</h4>
-                        <p>maths education</p>
-                    </div>
-                    <div class="pay-items-details">
-                        <h4>course price</h4>
-                        <p>1234</p>
-                    </div>
-                    <div class="pay-items-details">
-                        <h4>Total</h4>
-                        <p>1234</p>
-                    </div>
-                    <button class="btn-payment" id="submit-btn">GET COURSE</button>
+ 
             </div>
           </div>
           
-
+       </form>
        </div>
 
 

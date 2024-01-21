@@ -1,6 +1,7 @@
 let loginBtn = document.getElementById("login");
 let BASEURL = `https://child-edu-backend.onrender.com`
 loginBtn.addEventListener("submit",tryLogin)
+
 async function tryLogin(e){
      e.preventDefault()
     let email = document.getElementById("email").value
@@ -19,9 +20,10 @@ async function tryLogin(e){
         console.log(res)
         let data = await res.json()
         console.log(data);
-        localStorage.setItem("accessToken",`Bearer ${data.accessToken}`);
+        localStorage.setItem("accessToken",JSON.stringify(`Bearer ${data.accessToken}`));
         localStorage.setItem("userId", JSON.stringify(data.user.id));
-        // window.location.href='./index.html'
+        alert("login successful");
+        window.location.href='../html/index.html';
     }else{
         alert("email and password can not be empty")
     }

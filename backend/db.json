@@ -1,10 +1,46 @@
 {
-  "users": [],
-  "orders": [],
-  "cart":[],
-  "adminusers":[],
+  "users": [
+    {
+      "password": "$2b$10$66bSJjPElb6szAz3EB/NDuPmRuCdzigrQJ2Ve1Y0rqShsd6AvB39e",
+      "email": "vpavankumar2105@gmail.com",
+      "firstname": "Pavan",
+      "lastname": "Kumar",
+      "createdAt": 1705847448011,
+      "age": "21",
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "orderlist": [
+        {
+          "userId": 1,
+          "order": {
+            "details": {
+              "userName": "Pavan Kumar",
+              "email": "vpavankumar2105@gmail.com",
+              "address": "Geeta nagar,jangoan,telangana, qdwd, sff - [object HTMLInputElement]",
+              "nameOnCard": "rrg",
+              "cardNumber": "9999999999999999",
+              "expiry": "January/2102",
+              "cvv": "121",
+              "status": "Processed"
+            },
+            "products": {
+              "courseName": "Online Art and Craft Course for Kids",
+              "id": 2,
+              "price": 24.99
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "cart": [],
+  "adminusers": [],
   "adminorders": [],
-  "courses":[
+  "courses": [
     {
       "courseId": 1,
       "title": "Online Guitar Course for Kids",
@@ -312,7 +348,10 @@
       "image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660281459.webp",
       "title": "Language Learners",
       "description": "Explore the world of languages through fun and interactive activities.",
-      "courseIds": [3, 12],
+      "courseIds": [
+        3,
+        12
+      ],
       "duration": "8 weeks",
       "preferredSeason": "summer",
       "activity": "indoor",
@@ -323,7 +362,11 @@
       "image": "https://www.shutterstock.com/shutterstock/photos/2256211569/display_1500/stock-photo-teacher-and-toddler-playing-with-maths-puzzle-game-sitting-on-table-at-kindergarten-2256211569.jpg",
       "title": "Math Magic",
       "description": "Discover the magic of numbers and mathematical concepts in an engaging way.",
-      "courseIds": [9, 27, 28],
+      "courseIds": [
+        9,
+        27,
+        28
+      ],
       "duration": "10 weeks",
       "preferredSeason": "winter",
       "activity": "indoor",
@@ -334,7 +377,12 @@
       "image": "https://img.freepik.com/premium-photo/science-education-concept-boy-doing-science-experiments_191555-2218.jpg?size=626&ext=jpg&ga=GA1.1.1126098393.1705672265&semt=ais",
       "title": "Science Explorers",
       "description": "Embark on exciting journeys to explore the wonders of science and nature.",
-      "courseIds": [26,10, 20,13],
+      "courseIds": [
+        26,
+        10,
+        20,
+        13
+      ],
       "duration": "12 weeks",
       "preferredSeason": "rainy",
       "activity": "outdoor",
@@ -345,7 +393,11 @@
       "image": "https://c8.alamy.com/comp/2MT13Y1/cartoon-kid-space-explorer-art-for-artist-creativity-and-inspiration-2MT13Y1.jpg",
       "title": "Creative Arts & Crafts",
       "description": "Unleash your creativity with artistic projects and crafty adventures.",
-      "courseIds": [2, 22, 29],
+      "courseIds": [
+        2,
+        22,
+        29
+      ],
       "duration": "6 weeks",
       "preferredSeason": "summer",
       "activity": "indoor",
@@ -356,7 +408,11 @@
       "image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660363720.webp",
       "title": "Musical Melodies",
       "description": "Learn the basics of music, instruments, and create your own tunes.",
-      "courseIds": [13, 14, 15],
+      "courseIds": [
+        13,
+        14,
+        15
+      ],
       "duration": "8 weeks",
       "preferredSeason": "winter",
       "activity": "indoor",
@@ -367,7 +423,11 @@
       "image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1659018153.webp",
       "title": "Dance Delight",
       "description": "Explore different dance styles and express yourself through movement.",
-      "courseIds": [16, 17, 18],
+      "courseIds": [
+        16,
+        17,
+        18
+      ],
       "duration": "10 weeks",
       "preferredSeason": "rainy",
       "activity": "indoor",
@@ -378,7 +438,11 @@
       "image": "https://www.shutterstock.com/image-photo/cute-young-girl-exploring-ancient-600nw-1339829222.jpg",
       "title": "Public Speaking Prodigy",
       "description": "Develop effective communication skills and boost your confidence.",
-      "courseIds": [19, 20, 21],
+      "courseIds": [
+        19,
+        20,
+        21
+      ],
       "duration": "8 weeks",
       "preferredSeason": "summer",
       "activity": "indoor",
@@ -389,7 +453,11 @@
       "image": "https://img.freepik.com/free-vector/girl-using-laptop-with-binary-code_1308-114505.jpg?size=626&ext=jpg&ga=GA1.1.1126098393.1705672265&semt=ais",
       "title": "Reasoning Rangers",
       "description": "Enhance logical thinking and problem-solving skills with exciting challenges.",
-      "courseIds": [22, 23, 24],
+      "courseIds": [
+        22,
+        23,
+        24
+      ],
       "duration": "12 weeks",
       "preferredSeason": "winter",
       "activity": "indoor",
@@ -400,7 +468,11 @@
       "image": "https://d1r3wl4zsojqie.cloudfront.net/detail_image/1660281459.webp",
       "title": "Vocabulary Voyage",
       "description": "Expand your word bank through engaging vocabulary-building activities.",
-      "courseIds": [25, 26, 27],
+      "courseIds": [
+        25,
+        26,
+        27
+      ],
       "duration": "6 weeks",
       "preferredSeason": "rainy",
       "activity": "indoor",
@@ -411,12 +483,17 @@
       "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/51AlOQCidkL.jpg",
       "title": "Game Gurus",
       "description": "Dive into the world of strategic games and develop critical thinking skills.",
-      "courseIds": [28, 29, 30],
+      "courseIds": [
+        28,
+        29,
+        30
+      ],
       "duration": "10 weeks",
       "preferredSeason": "summer",
       "activity": "indoor",
-      "rating":4.5
-      }],
+      "rating": 4.5
+    }
+  ],
   "testimonials": [
     {
       "userId": 1,

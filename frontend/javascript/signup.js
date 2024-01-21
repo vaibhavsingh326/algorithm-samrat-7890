@@ -1,5 +1,6 @@
 let registerBtn = document.getElementById("singup")
 let BASEURL = `https://child-edu-backend.onrender.com`
+// let BASEURL='http://localhost:9090'
 registerBtn.addEventListener("submit",tryRegister)
 async function tryRegister(e){
     e.preventDefault()
@@ -24,6 +25,7 @@ async function tryRegister(e){
         })
         let data = await res.json()
         console.log(data)
+        window.location.href='../html/login.html';
     }else{
         alert("feilds can't be empty")
     }

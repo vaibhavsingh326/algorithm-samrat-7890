@@ -19,6 +19,7 @@ body{
     box-shadow: 25px 25px 55px rgba(0,0,0,.05);
     border-radius: 60px;
     margin-bottom: 50px;
+    margin:0px 10px 0px 15px;
     width: 90%;
     
     
@@ -75,18 +76,19 @@ body{
 
 
 .course-btn{
-    background: #8ab5e4;
+    background: #79b7f9;
     box-shadow: rgba(165,208,255,.54) 8px 8px 0;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 38px;
     letter-spacing: 0.05em;
     border-radius: 55px;
     display: inline-block;
-    padding-top: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
-    padding-left: 30px;
+    min-width:90px;
+     padding-top: 3px; 
+  border:1px solid #1c81ed;
+    padding-bottom: 3px;
+  
     text-align: center;
     cursor: pointer;
     transition: 0.3s ease all;
