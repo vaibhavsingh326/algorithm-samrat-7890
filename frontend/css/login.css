@@ -1,8 +1,8 @@
 body{
     /* background-image: url("image/WhatsApp\ Image\ 2024-01-20\ at\ 10.54.52\ PM.jpeg"); */
-    background-image: url("/frontend/css/images/WhatsApp\ Image\ 2024-01-20\ at\ 10.54.52\ PM.jpeg");
+    background-image: url("../images/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg");
     background-size: cover;
-    background-position-y: center;
+    background-position: center;
     padding: 0;
     margin: 0;
 }

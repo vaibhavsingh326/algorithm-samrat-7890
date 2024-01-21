@@ -14,11 +14,11 @@ body{
 }
 .inner-payment-container{
  
-    width:85%;
+    width:90%;
     display: flex;
    
     justify-content: center;
-   height:80%;
+   height:100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   
 }
@@ -49,7 +49,7 @@ body{
     box-shadow: rgba(4, 23, 45, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(39, 175, 220, 0.08) 0px 1px 0px inset;
 }
 .card{
-    width:60%;
+    width:50%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -72,13 +72,13 @@ body{
 
 }
 .items{
-    width:90%;
+    width:80%;
     text-align: center;
 }
 .pay-items-details{
     display: flex;
-    justify-content: space-around;
-    height:40px;
+    justify-content:space-between;
+    height:60px;
   
 }
 .pay-items-details h4 , p{

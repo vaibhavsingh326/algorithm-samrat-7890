@@ -1,8 +1,31 @@
-let submit = document.getElementById("submit-btn");
-let userId=JSON.parse(localStorage.getItem("userId"))
-console.log(userId)
-submit.addEventListener("submit",(e)=>{
-    e.preventDefault();
+let BASEURL="https://child-edu-backend.onrender.com"
+// let userId=JSON.parse(localStorage.getItem("userId"));
+let products = JSON.parse(localStorage.getItem("coursedetails"));
+let token=JSON.parse(localStorage.getItem("accessToken"));
+console.log(token);
+
+console.log(products)
+let paydetails=document.getElementById("items");
+let payitems=document.getElementsByClassName("pay-items-details")[0];
+let h4=document.createElement("h4");
+h4.innerHTML=products.courseName
+let p=document.createElement("p");
+p.innerHTML=products.price;
+payitems.append(h4,p);
+let subdiv=document.createElement("div");
+let total=document.createElement("h4");
+total.innerHTML="total";
+
+let submit=document.createElement("input");
+submit.innerHTML=products.price;
+submit.className="btn-payment"
+submit.id="submit-btn";
+submit.type="submit";
+subdiv.append(total,submit);
+paydetails.append(subdiv);
+let userId=1;
+submit.addEventListener("click",(e)=>{
+   e.preventDefault();
     let userName =document.getElementById("name").value
     let email = document.getElementById("email").value
     let address =document.getElementById("address").value +", "+
@@ -12,8 +35,9 @@ submit.addEventListener("submit",(e)=>{
     let expiry =document.getElementById("expmonth").value+"/"+document.getElementById("expyear").value
     let cvv = document.getElementById("cvv").value
     let status ="Processed"
+   
     let details ={
-        userId,
+    
         userName,
         email,
         address,
@@ -23,10 +47,12 @@ submit.addEventListener("submit",(e)=>{
         cvv,
         status
     }
+    console.log(details)
     placeOrder(details)
 })
+
 async function placeOrder(details){
-    products = JSON.parse(localStorage.getItem("course"))
+  
     let req ={
         userId,
         order:{
@@ -37,13 +63,14 @@ async function placeOrder(details){
     let response = await fetch(`${BASEURL}/orders`,{
         method:"POST",
         headers:{
-            "Content-Type":"application/json"
+            "Content-Type":"application/json",
+            "Authorization": token
         },
         body:JSON.stringify({userId,order:req})
     })
     let data = await response.json()
     console.log(data);
-    window.location("./index.html")
+    window.location.href="../html/index.html"
 }
 
 let expyear=document.getElementById("expyear");
@@ -65,8 +92,8 @@ let expyear=document.getElementById("expyear");
  let cardnumber=document.getElementById("cardnumber");
  cardnumber.addEventListener("blur",()=>{
   
-    if(cardnumber.value>1000000000000 ||cardnumber.value<100000000000){
-     cardnum.innerHTML="card number should be 12"
+    if(cardnumber.value>10000000000000000 ||cardnumber.value<1000000000000000){
+     cardnum.innerHTML="card number should be 16"
      cardnum.style.color="red"
     
      cardnumber.value=""
