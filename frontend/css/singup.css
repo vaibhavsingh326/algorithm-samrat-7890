@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("../images/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg");
+    background-image: url("../html/bg.jpg");
     background-size: cover;
     background-position-y: center;
     padding: 0;
@@ -23,39 +23,35 @@ body{
     position: absolute;
     border-radius: 50%;
 }
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -100px;
-    top: -100px;
+.newclass{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
 }
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -90px;
-    bottom: -300px;
-}
+
 form{
-    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 500px;
     width: 500px;
-    background-color: rgba(255,255,255,0.13);
+    background-color: rgba(255, 255, 255, 0.13);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 30px;
     padding-top: 70px;
     /* padding-bottom: 50px; */
     margin-top: 40px;
+    text-align: center;
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -72,27 +68,29 @@ form h3{
 }
 
 label{
-    display: block;
+    /* display: block; */
     font-size: 16px;
     font-weight: 500;
 }
 input{
     display: block;
     height: 50px;
-    width: 100%;
+    width: 80%;
     background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
+   border: none;
+   
     padding: 0 10px;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    border-radius: 25px;
 }
 ::placeholder{
     color: #e5e5e5;
 }
 #submit-btn{
     /* margin-top: 50px; */
-    width: 100%;
+    width: 70%;
     background-color: #ffffff;
     color: #080710;
     padding: 15px 0;
@@ -100,6 +98,7 @@ input{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    border-radius: 24px;
 }
 .social{
   margin-top: 10px;

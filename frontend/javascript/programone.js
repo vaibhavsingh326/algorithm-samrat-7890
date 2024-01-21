@@ -4,6 +4,41 @@ let paginationWrapper = document.getElementById("pagination-wrapper");
 let mainSection = document.getElementsByClassName("procontainer")[0];
 // console.log(mainSection)
 
+
+let filterbyTypes = document.getElementById("filter-by-type");
+
+let sortltoh = document.getElementById("sort-by-select")
+
+let searchBySelect = document.getElementById("search-by-select");
+let searchByInput = document.getElementById("search-by-input");
+let searchByButton = document.getElementById("search-by-button");
+
+//filter
+
+filterbyTypes.addEventListener("change",(e)=>{
+    // mainSection.innerHTML = "";
+   if(filterbyTypes.value!="Filter By Type")
+   fetchData(`${newURL}?preferredSeason_like=${filterbyTypes.value}&_page=1&_limit=4`)
+})
+
+
+//sort
+sortltoh.addEventListener("change",(e)=>{
+    if(sortltoh.value=="low-to-high"){
+        fetchData(`${newURL}?_sort=rating&_order=asc&_page=1&_limit=4`) 
+    }else if(sortltoh.value=="high-to-low"){
+        fetchData(`${newURL}?_sort=rating&_order=desc&_page=1&_limit=4`) 
+    }else{
+        fetchData(`${newURL}?_page=1&_limit=4`);
+    }
+})
+
+//search
+
+searchByButton.addEventListener('click', (e) => {
+    fetchData(`${newURL}?preferredSeason=${searchByInput.value}&_page=1&_limit=4`);
+})
+
 async function fetchData(url, queryParams = "") {
     try {
         let res = await fetch(`${url}&${queryParams}`);
@@ -74,9 +109,7 @@ function createCard(item) {
     proregister.innerText = "Register Now"
 
     proregister.addEventListener("click", (e)=>{
-       
-        
-        
+        window.location.href="../html/program.html";
     })
 
     proleft.append(img)
@@ -89,7 +122,7 @@ function createCard(item) {
 }
 
 function appendata(programs) {
-    // mainSection.innerHTML = "";
+     mainSection.innerHTML = "";
     console.log(programs)
     programs.forEach(item => {
         let card = createCard(item);
