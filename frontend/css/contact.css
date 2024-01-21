@@ -4,11 +4,12 @@
     font-family: "Exo 2", sans-serif;
 
 }
+
 .about-img{
     background-image: url("../images/download\ \(1\).png");
     background-position: center;
     background-size: cover;
-    height:100px;
+    height:150px;
     opacity:0.8;
     display:flex;
     justify-content:center;

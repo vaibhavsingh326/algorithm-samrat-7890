@@ -74,6 +74,8 @@ function createCard(item) {
     proregister.innerText = "Register Now"
 
     proregister.addEventListener("click", (e)=>{
+       
+        
         
     })
 
@@ -102,7 +104,8 @@ function pagination(total, limit, queryParams) {
     for (let i = 1; i <= totalButtons; i++) {
         let button = document.createElement('button');
         button.innerText = i;
-        button.style.backgroundColor = 'green';
+        button.style.backgroundColor = '#4cd4ca';
+        button.style.marginBottom="20px"
         button.style.width = '60px';
         button.style.height = '40px';
         button.style.borderRadius = '12px'

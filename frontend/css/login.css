@@ -120,8 +120,12 @@ input{
 .social i{
   margin-right: 4px;
 }
-@media screen and (max-witdh:580px){
+@media screen and (max-width:580px){
     body{
         height: 120vh;
+    }
+    form{
+        height: 550px;
+        
     }
 }

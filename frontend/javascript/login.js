@@ -22,7 +22,8 @@ async function tryLogin(e){
         console.log(data);
         localStorage.setItem("accessToken",JSON.stringify(`Bearer ${data.accessToken}`));
         localStorage.setItem("userId", JSON.stringify(data.user.id));
-        // window.location.href='./index.html'
+        alert("login successful");
+        window.location.href='../html/index.html';
     }else{
         alert("email and password can not be empty")
     }

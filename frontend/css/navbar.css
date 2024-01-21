@@ -7,18 +7,20 @@ body {
     display: flex;
     justify-content: center;
     height: 60px;
+    position: fixed;
+    z-index: 1;
   }
   
-  .navbar {
+  .navbar-1 {
     display: flex;
     background-color: #4cd4ca;
     width: 100vw;
     height: 60px;
-    position: fixed;
+
     z-index: 1;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+   
   }
   
   .navbar-inner {
@@ -28,19 +30,28 @@ body {
     background-color: #4cd4ca;
     flex-basis: 700px;
   }
-  
+  .navbar-inner a{
+     color:black;
+     text-decoration-line: none;
+  }
   .login-btn {
-    background-color: #925041;
+    background-color: rgba(0, 0, 255, 0.65);
     padding: 10px;
-    margin-right: 15px;
+    margin-right: 25px;
     font-family: "Exo 2", sans-serif;
     font-size: 18px;
     border-radius: 7px;
-    color: #4cd4ca;
+   
     border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
-  
+  .login-btn a{
+    text-decoration-line:none ;
+    color:#4cd4ca;
+  }
+  .login-btn:hover a{
+    color: blue;
+  }
   .login-btn:hover {
     background-color: #4cd4ca;
     color: rgba(0, 0, 255, 0.65);
@@ -83,22 +94,16 @@ body {
     background-color: black;
   }
   
-/*  
-  @media screen and (max-width:1280) and (min-width: 1020px) {
-    .main {
-      height: 530px;
-    }
-    .head-section #main-text {
-      font-size: 65px;
-      width: 520px;
-    }
-  }
-  */
 
   @media screen and (max-width: 728px) {
-    .navbar {
+    .container1{
+      position: fixed;
+      z-index: 1;
+    }
+    .navbar-1 {
       justify-content: space-between;
       z-index: 1;
+    
     }
     .hamburger-menu {
       display: block;

@@ -122,13 +122,11 @@ button.addEventListener("click", () => {
     price: course.course_price,
   };
   console.log(obj)
-  
-
- 
 
   // arr.push(obj);
 
   localStorage.setItem("coursedetails", JSON.stringify(obj));
+  window.location.href="../html/payment.html";
 });
 
 
