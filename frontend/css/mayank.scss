@@ -1,0 +1,519 @@
+@media (max-width:1000px) {
+
+    // .mcont{
+    //     border: 2px solid black;
+    //     background-color: #5cdfe9;
+    //     border-radius: 24px;
+    // }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Salsa", cursive;
+
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 100;
+        color: rgb(0, 0, 0);
+    }
+
+    a:not(:empty) {
+        color: rgb(0, 0, 0);
+
+        /* Change the text color only */
+    }
+
+    .iml {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid;
+        padding: 16px;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+    }
+
+    .container246 {
+        height: auto;
+        width: 100%;
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+
+        // background-color: #212530;
+
+        .mtop {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            background-color: #cdb4db;
+            padding: 3%;
+
+            .mayoestin {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .oetitle {
+                    font-family: "Salsa", cursive;
+                    margin-top: 20px;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+
+                    h2 {
+                        font-size: 44px;
+                    }
+                }
+
+                .mayoest {
+                    height: 140px;
+
+                    p {
+                        font-family: "Salsa", cursive;
+                        font-size: 20px;
+                        font-weight: 100;
+                        margin-top: 20px;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+
+                .maysocial {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+
+                    .iconb {
+                        border: 1px solid #b1b1b1;
+                        font-size: 28px;
+                        margin-right: 25px;
+                        color: #000000;
+
+                    }
+
+                    .iconb:hover {
+                        color: white;
+                        border: 1px solid white;
+                    }
+                }
+            }
+
+            .maycontact {
+                // border: 2px solid rgb(0, 0, 0);
+                width: 100%;
+                height: auto;
+
+                .contitle {
+                    font-size: 24px;
+                    margin-top: 20px;
+                    text-align: center;
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                }
+
+                .maycontactin {
+                    // border: 2px solid rgb(0, 0, 0);
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    margin-bottom: 30px;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 100;
+                    }
+
+                    .iconc {
+                        // border: 2px solid #fafafa;
+                        font-size: 24px;
+                        margin-right: 5px;
+                        color: #000000;
+                    }
+
+                    .iconc:hover {
+                        color: white;
+                        border: 1px solid white;
+                    }
+                }
+            }
+
+            .mayquick {
+                // border: 2px solid rgb(68, 93, 231);
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                text-align: center;
+
+                .linktitle {
+                    font-size: 24px;
+                    color: rgb(0, 0, 0);
+                    text-decoration: underline;
+                }
+
+                .quickin {
+                    // border: 2px solid rgb(82, 221, 47);
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 18px;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    gap: 10px;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 100;
+                    }
+
+                    li {
+                        list-style: none;
+                    }
+                }
+
+                a:hover {
+                    color: #b1b1b1;
+
+                }
+            }
+
+            .maycollections {
+                // border: 2px solid rgb(255, 113, 47);
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+
+                .quickin {
+                    // border: 2px solid rgb(232, 108, 236);
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 18px;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    gap: 10px;
+                    text-align: center;
+
+                    a {
+                        text-decoration: none;
+                        font-weight: 100;
+                    }
+
+                    li {
+                        list-style: none;
+                    }
+                }
+
+                a:hover {
+                    color: #b1b1b1;
+
+                }
+            }
+
+            // .coltitle {
+            //     font-size: 24px;
+            //     margin-top: 30px;
+            //     color: white;
+            // }
+
+            // .colimg {
+            //     display: grid;
+            //     grid-template-columns: repeat(3, 1fr);
+            //     justify-content: center;
+            //     gap: 10px;
+            //     margin-top: 30px;
+            //     margin-bottom: 40px;
+
+            //     img {
+            //         height: 120px;
+            //         width: 120px;
+            //     }
+            // }
+
+            // a:hover {
+            //     opacity: 0.25;
+            // }
+        }
+
+    }
+
+    .mbot {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        background-color: #000000;
+        color: white;
+
+        .heart {
+            color: rgb(221, 33, 149)
+        }
+
+        .th {
+            color: green;
+            margin-left: 5px;
+        }
+    }
+}
+
+
+
+
+
+// *******Desktop*********
+@media (min-width:1001px) {
+    // .mcont{
+    //     // border: 2px solid black;
+    //     // background-color: #5cdfe9;
+    //     // border-radius: 24px;
+    // }
+
+
+    .mayank {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container246 {
+            //  border: 4px solid rgb(47, 211, 83);
+            font-weight: 100;
+            color: rgb(0, 0, 0);
+            font-family: "Salsa", cursive;
+
+            a {
+                text-decoration: none;
+
+            }
+
+            .mtop {
+                background-color: #cdb4db;
+                height: 420px;
+                width: 100%;
+                display: flex;
+                //  flex-direction: column;
+                //  background-color: #e4a6a6;
+                //  border: 2px solid rgb(30, 250, 30);
+                text-align: center;
+                padding: 5%;
+
+                a {
+                    font-size: 18px;
+                }
+
+                a:not(:empty) {
+                    color: rgb(0, 0, 0);
+
+                    /* Change the text color only */
+                }
+
+                .mayoestin {
+                    // border: 2px solid rgb(231, 224, 224);
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .oetitle {
+                        font-size: 30px;
+                        //   border: 2px solid black;
+                        text-decoration: underline;
+
+                    }
+
+                    .mayoest {
+                        height: 140px;
+
+                        p {
+                            font-size: 18px;
+                            //  border: 2px solid black;
+                            font-weight: 100;
+                            color: rgb(0, 0, 0);
+                        }
+                    }
+
+                    .maysocial {
+                        height: 40px;
+                        //  border: 2px solid black;
+
+                        .iconb {
+                            // border: 1px solid #b1b1b1;
+                            font-size: 28px;
+                            margin-right: 25px;
+                            color: #000000;
+                        }
+
+                        .iconb:hover {
+                            color: rgb(0, 0, 0);
+                            border: 1px solid white;
+                        }
+                    }
+                }
+
+                .maycontact {
+                    //  border: 2px solid rgb(33, 240, 255);
+                    width: 30%;
+                    margin-left: 80px;
+
+                }
+
+                .contitle {
+                    font-size: 24px;
+                    // border: 2px solid black;
+                    height: 64px;
+                    text-align: center;
+                    text-decoration: underline;
+                }
+
+                .maycontactin {
+                    // border: 2px solid rgb(33, 240, 255);
+                    height: 210px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding-top: 15px;
+                    text-align: center;
+                    //  font-size: 14px;
+                    color: #000000;
+
+                    .iconc {
+                        // border: 2px solid #b1b1b1;
+                        font-size: 24px;
+                        margin-right: 5px;
+                        color: #000000;
+                    }
+
+                    .iconc:hover {
+                        color: rgb(137, 51, 235);
+                        border: 1px solid white;
+                    }
+                }
+
+                .mayquick {
+                    //  border: 2px solid rgb(184, 168, 168);
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 50px;
+                    text-align: center;
+
+                    .linktitle {
+                        font-size: 24px;
+                        //  border: 2px solid black;
+                        height: 64px;
+                        text-decoration: underline;
+                    }
+
+                    .quickin {
+                        height: 230px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        //  border: 2px solid rgb(33, 240, 255);
+                        font-size: 20px;
+                        color: #000000;
+
+                        li {
+                            list-style: none;
+                        }
+                    }
+
+                    a:hover {
+                        color: #0717f8;
+                        ;
+                    }
+
+
+                }
+
+                .maycollections {
+                    // border: 2px solid rgb(219, 202, 202);
+                    width: 22%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 60px;
+
+                    // .coltitle {
+                    //     font-size: 20px;
+                    //     // border: 2px solid black;
+                    //     height: 64px;
+                    // }
+                    .quickin {
+                        height: 280px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        //  border: 2px solid rgb(33, 240, 255);
+                        font-size: 22px;
+                        color: #000000;
+                        font-weight: 100;
+
+                        li {
+                            list-style: none;
+                        }
+                    }
+
+                    // .colimg {
+                    //     display: grid;
+                    //     grid-template-columns: repeat(3, 1fr);
+                    //     height: 230px;
+                    //     //border: 2px solid rgb(148, 24, 206)
+                    //     padding: 10px;
+                    //     justify-content: center;
+                    //     gap: 10px;
+
+                    //     img {
+                    //         // border: 2px solid rgb(193, 179, 199);
+                    //         height: 90px;
+                    //         width: 90px;
+                    //     }
+                    // }
+
+                    a:hover {
+                        opacity: 0.25;
+                    }
+                }
+
+            }
+
+            .mbot {
+                // border: 2px solid rgb(169, 57, 218);
+                width: 100%;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #000000;
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 100;
+
+                .heart {
+                    color: rgb(221, 33, 149)
+                }
+
+                .th {
+                    color: rgb(73, 255, 73);
+                    margin-left: 5px;
+                }
+            }
+
+        }
+    }
+}
