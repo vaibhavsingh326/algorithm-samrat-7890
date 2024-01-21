@@ -1,4 +1,4 @@
-let submit = document.querySelector("form");
+let submit = document.getElementById("submit-btn");
 let userId=JSON.parse(localStorage.getItem("userId"))
 console.log(userId)
 submit.addEventListener("submit",(e)=>{
@@ -45,3 +45,35 @@ async function placeOrder(details){
     console.log(data);
     window.location("./index.html")
 }
+
+let expyear=document.getElementById("expyear");
+
+ expyear.addEventListener("blur",()=>{
+    let date=document.getElementById("small");
+    if(expyear.value<2024||expyear.value>2322){
+        expyear.value="";
+      date.innerHTML="enter year b/w 2023 2322"
+      date.style.color="red";
+    
+    }else{
+        date.innerHTML="";
+    }
+
+ })
+
+ let cardnum=document.getElementById("card-number");
+ let cardnumber=document.getElementById("cardnumber");
+ cardnumber.addEventListener("blur",()=>{
+  
+    if(cardnumber.value>1000000000000 ||cardnumber.value<100000000000){
+     cardnum.innerHTML="card number should be 12"
+     cardnum.style.color="red"
+    
+     cardnumber.value=""
+    }else{
+      
+        cardnum.innerHTML="";
+        
+    }
+ })
+

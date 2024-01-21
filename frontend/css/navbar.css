@@ -1,9 +1,9 @@
-/* * {
+body {
     padding: 0px;
     margin: 0px;
   } */
   
-  .container{
+  .container1 {
     display: flex;
     justify-content: center;
     height: 60px;
@@ -83,7 +83,7 @@
     background-color: black;
   }
   
- 
+/*  
   @media screen and (max-width:1280) and (min-width: 1020px) {
     .main {
       height: 530px;
@@ -93,7 +93,7 @@
       width: 520px;
     }
   }
- 
+  */
 
   @media screen and (max-width: 728px) {
     .navbar {
