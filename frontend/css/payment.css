@@ -32,7 +32,7 @@ body{
   color:black;
 }
 .payment-details{
-    background-color: rgb(95, 97, 223);
+    background-color: rgb(174, 174, 207);
   width:90%;
    color:black;
   padding:10px;
@@ -108,20 +108,20 @@ body{
 
 }
 .btn-payment{
-    background-color:blue;
+    background-color:rgb(87, 102, 200);
 
    width:91%;
     color:white;
     padding:20px ;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    border-color:rgb(8, 0, 255);
+    border-color:black;
    cursor:pointer;
   
 
 }
 .btn-link{
     text-decoration-line:none ;
-    background-color:blue;
+    background-color:rgb(87, 102, 200);
       padding:10px;
    border:none;
    
