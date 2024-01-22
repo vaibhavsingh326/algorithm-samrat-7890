@@ -5,87 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/payment.css">
+   
 </head>
 <body>
+
     <div class="payment-container">
         <h1 style="text-align:center">PAYMENT DETAILS</h1>
-       <form class="inner-payment-container">
-
-          <div class="payment-details">
+       <form class="form" id="payment">
+        
+          <div class="inner-payment-container">
            
-            <address class="address">
-                <h2 style="margin-left:10px">User Details</h2>
-                <div>
-                
-                    <input type="text" id="name" name="name" placeholder="your name" required>
-                </div>
-                <div>
-                  
-                    <input type="email" id="email" name="email" placeholder="your email" required>
+              <div class="payment-details">
     
+                <address class="address">
+                  
+                    <div>
+                        <p style="margin-left:10px;font-weight:bolder">User Details</p>
+                        <div>
+    
+                            <input type="text" id="name" name="name" placeholder="your name" required>
+                        </div>
+                        <div>
+    
+                            <input type="email" id="email" name="email" placeholder="your email" required>
+                        </div>
+                                       <div>
+                           <input type="text" id="address" name="address" placeholder="Address" required>
+                           <input type="text" id="city" name="address2" placeholder="City" required>
+                           <input type="text" id="state" name="address3" placeholder="State" required>
+                           <input type="text" id="zipcode" name="address4" placeholder="zipcode" required>
+                                       </div>
+                    </div>
+    
+                  <div class="card">
+                     <p style="font-weight:bolder">Card Details</p>
+                     <div>
+                     <input type="text" placeholder="NAME ON CARD" required id="cardname" ></div>
+                     <div>
+                    <input type="number" size="12" placeholder="CARD NUMBER" required id="cardnumber" ></div>
+                    <small id="card-number"></small>
+                    <span style="padding:0px;margin:0px;">Expiry Data/CVV</span>
+                   <div class="payment-div">
+    
+                        <span>
+                           
+                        <select id="expmonth" name="month">
+                          <option>January</option>
+                          <option>February</option>
+                          <option>March</option>
+                          <option>April</option>
+                          <option>May</option>
+                          <option>June</option>
+                          <option>July</option>
+                          <option>August</option>
+                          <option>September</option>
+                          <option>October</option>
+                          <option>November</option>
+                          <option>December</option>
+                        </select>
+                        </span>
+                    </div>
+                    <div>
+                      
+                        <input type="number" id="expyear" placeholder="YEAR" required>
+    
+                    </div>
+                    <small id="small"></small>
+                     <div >
+                      
+                          <input type="password" minlength="3" maxlength="3" placeholder="cvv number" id="cvv" required>
+                    </div>
                 </div>
-               <div>
-                   <input type="text" id="address" name="address" placeholder="Address" required>
-                   <input type="text" id="city" name="address2" placeholder="City">
-                   <input type="text" id="state" name="address3" placeholder="State" required>
-                   <input type="text" id="zipcode" name="address4" placeholder="zipcode">
-               </div>
+                <div >
+                    <h2 style="margin-left:10px">Course Details</h2>
+                    <div class="course">
+                        <p id="hidden">Coursename:</p>
+                        <input id="coursename" disabled>
+                        <p id="hidden">Price:</p>
+                        <input id="price" disabled>
+                    </div>
+                </div>
             </address>
-              <div class="card">
-                 <p style="font-weight:bolder">Card Details</p>
-                 <div>
-                 <input type="text" placeholder="NAME ON CARD" required id="cardname"></div>
-                 <div> 
-                <input type="number" size="12" placeholder="CARD NUMBER" required id="cardnumber"></div>
-                <small id="card-number"></small>
-                <span>EXPIRY DATE (MM YYYY)</span>
-               <div> 
-                    
-                    <span>
-                        <div>month:</div>
-                    <select id="expmonth" name="month">
-                      <option>January</option>
-                      <option>February</option>
-                      <option>March</option>
-                      <option>April</option>
-                      <option>May</option>
-                      <option>June</option>
-                      <option>July</option>
-                      <option>August</option>
-                      <option>September</option>
-                      <option>October</option>
-                      <option>November</option>
-                      <option>December</option>
-                    </select>
-                    </span>
-                </div>
-                <div>
-                    <div>year:</div>
-                    <input type="number" id="expyear" placeholder="YEAR">
-                
-                </div>
-                <small id="small"></small>
-                 <div style="margin-top:-10px">
-                    <div>cvv:</div>
-                      <input type="password" minlength="3" maxlength="3" placeholder="cvv number" id="cvv">
-                </div>
+            </div>
+          
+                <button type="submit" id="submit-btn" class="btn-payment" width="500px">BUY COURSE</button>
+                <button class="btn-link"><a href="../html/program.html" style="font-size:larger;text-decoration-line:none;color:white;">Go Back</a></button>
+         
             </div>
 
-        </address>
-          </div>
-          
-          <div class="payment-items">
-            <div class="items" id="items">
-                <h2>course details</h2>
-                 
-                    <div class="pay-items-details">
-                     
-                    </div>
- 
-            </div>
-          </div>
-          
+             
        </form>
+       
        </div>
 
 

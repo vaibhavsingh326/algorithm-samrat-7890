@@ -2,39 +2,48 @@ body{
   padding:0px;
   margin:0px;
   font-family: "Exo 2", sans-serif;
+  display: flex;
+
+    justify-content: center;
+   
+    background-image: url("../images/output-onlinepngtools\ \(2\).png");
+    background-position-y: center;
+    background-size: cover;
 }
 
 .payment-container{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    height:100vh;
+    align-items:center; */
+    width:fit-content;
+    
 
 }
+
 .inner-payment-container{
- 
-    width:90%;
+   opacity: 0.9;
+    width:100%;
     display: flex;
-   
+  flex-direction: column;
     justify-content: center;
-   height:100%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  
+    align-items: center;
+   height:70%;
+  color:black;
 }
 .payment-details{
-   
-   display: flex;
-   justify-content: space-around;
-   background-color: rgba(6, 45, 239,0.8);
-   color:white;
+    background-color: aqua;
+  width:90%;
+   color:black;
+  
 
 }
 .address{
-    width:300px;
-    display: flex;
-   flex-direction: column;
-   
+    width:100%;
+    display: grid;
+    grid-template-columns: 35% 30% 25%;
+    gap:10px;
+ 
 }
 .address input ,.card input,.card #expmonth{
     border:none;
@@ -43,23 +52,24 @@ body{
     border-radius:10px;
     margin:5px;
     opacity: 0.8578;
+    width:180px;
    
 }
 .address input:hover ,.card input:hover{
     box-shadow: rgba(4, 23, 45, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(39, 175, 220, 0.08) 0px 1px 0px inset;
 }
 .card{
-    width:50%;
+    width:70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    color:white;
+   gap:10px;
+  
  
    
 }
 .card input{
     font-size:10px;
-    width:250px;
+    width:180px;
     font-weight: bolder;
 }
 .payment-items{
@@ -77,11 +87,19 @@ body{
 }
 .pay-items-details{
     display: flex;
+    flex-direction: column;
     justify-content:space-between;
-    height:60px;
+    height:200px;
   
 }
-.pay-items-details h4 , p{
+.inner-pay{
+    width:90%;
+    font-family: "Exo 2", sans-serif;
+    display: flex;
+    justify-content: space-between;
+
+}
+.pay-items-details h2 , p{
     padding:0;
     margin:0;
     font-size:20px;
@@ -89,10 +107,56 @@ body{
 
 }
 .btn-payment{
-    background-color:white;
-    width:90%;
-    padding:10px 0px 10px 0px;
-    background: none;
+    background-color:blue;
+
+   width:90%;
+    color:white;
+    padding:20px ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-color:rgb(8, 0, 255);
    cursor:pointer;
+
+}
+.btn-link{
+    text-decoration-line:none ;
+    background-color:blue;
+      padding:10px;
+   border:none;
+
+ width:60%;
+    color:white;
+   
+}
+
+@media screen and (max-width: 978px) and (min-width: 658px) {
+   
+    .address input ,.card input,.card #expmonth{
+        width:110px;
+    }
+    .card input{
+        width:170px;
+    }
+    .card{
+        gap:0px;
+    }
+   
+}
+@media screen and (max-width: 658px) {
+    .address {
+        grid-template-columns: 200px 200px;
+    }
+.course{
+    display: flex;
+    width:400px;
+   
+}
+.address input ,.card input,.card #expmonth{
+    width:130px;
+}
+.card input{
+    width:130px;
+}
+#hidden{
+    display:none;
+}
 }
