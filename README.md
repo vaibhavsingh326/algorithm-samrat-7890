@@ -51,7 +51,7 @@ We believe that learning goes beyond the confines of traditional classrooms. Chi
 # Screenshots
 
 ## Login Page
-<img src="frontend/images/Screen Capture 002 - Document - 127.0.0.1.jpg" height="500px" width="800px">
+<img src="frontend/images/Screen Capture 002 - Document - 127.0.0.1.jpg" height="450px" width="800px">
 
 ## Signup Page
 <img src="frontend/images/Screen Capture 003 - Document - 127.0.0.1.jpg" height="500px" width="800px">
