@@ -8,6 +8,9 @@
 
 Child Education Hub is a unique project designed to cater to the diverse learning needs of children through a blend of online, offline, and outdoor courses. We understand that every child is unique, and our platform is committed to offering a variety of engaging educational opportunities to suit their individual preferences and learning styles.Miniminds is more than just a website; it's a gateway to a world of possibilities for your child's education. Let's embark on this exciting learning journey together!
 
+# ProjectLink
+https://65ae0a3a32bdb7f45c486224--willowy-crepe-4809ab.netlify.app/html/
+
 ## Team Members
 
 - Team Lead: [Mayank] 
