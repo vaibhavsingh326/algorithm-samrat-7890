@@ -1,31 +1,20 @@
 let BASEURL="https://child-edu-backend.onrender.com"
 // let BASEURL="http://localhost:9090"
 // let userId=JSON.parse(localStorage.getItem("userId"));
+let payment=document.getElementById("payment");
 let products = JSON.parse(localStorage.getItem("coursedetails"));
 let token=JSON.parse(localStorage.getItem("accessToken"));
-console.log(token);
 
-console.log(products)
-let paydetails=document.getElementById("items");
-let payitems=document.getElementsByClassName("pay-items-details")[0];
-let h4=document.createElement("h4");
-h4.innerHTML=products.courseName
-let p=document.createElement("p");
-p.innerHTML=products.price;
-payitems.append(h4,p);
-let subdiv=document.createElement("div");
-let total=document.createElement("h4");
-total.innerHTML="total";
 
-let submit=document.createElement("input");
-submit.innerHTML=products.price;
-submit.className="btn-payment"
-submit.id="submit-btn";
-submit.type="submit";
-subdiv.append(total,submit);
-paydetails.append(subdiv);
+let coursename=document.getElementById("coursename");
+let price=document.getElementById("price");
+coursename.value=products.courseName;
+price.value=products.price;
+
+let submit=document.getElementById("submit-btn");
+
 let userId=1;
-submit.addEventListener("click",(e)=>{
+payment.addEventListener("submit",(e)=>{
    e.preventDefault();
     let userName =document.getElementById("name").value
     let email = document.getElementById("email").value
@@ -36,7 +25,7 @@ submit.addEventListener("click",(e)=>{
     let expiry =document.getElementById("expmonth").value+"/"+document.getElementById("expyear").value
     let cvv = document.getElementById("cvv").value
     let status ="Processed"
-   
+   if(userName&&email&&address&&nameOnCard&&cardNumber&&expiry&&cvv){
     let details ={
     
         userName,
@@ -48,8 +37,11 @@ submit.addEventListener("click",(e)=>{
         cvv,
         status
     }
-    console.log(details)
+    alert('payment successful');
     placeOrder(details)
+}else{
+    alert('Please fill the details');
+}
 })
 
 async function placeOrder(details){
@@ -78,11 +70,11 @@ let expyear=document.getElementById("expyear");
 
  expyear.addEventListener("blur",()=>{
     let date=document.getElementById("small");
-    if(expyear.value<2024||expyear.value>2322){
+    if(expyear.value<2024||expyear.value>2029){
         expyear.value="";
-      date.innerHTML="enter year b/w 2023 2322"
+      date.innerHTML="enter year b/w 2023 2029"
       date.style.color="red";
-    
+      data.style.fontWeight="bolder";
     }else{
         date.innerHTML="";
     }
@@ -96,7 +88,7 @@ let expyear=document.getElementById("expyear");
     if(cardnumber.value>10000000000000000 ||cardnumber.value<1000000000000000){
      cardnum.innerHTML="card number should be 16"
      cardnum.style.color="red"
-    
+    cardnum.style.fontWeight="bolder"
      cardnumber.value=""
     }else{
       
