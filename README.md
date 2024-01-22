@@ -57,7 +57,7 @@ We believe that learning goes beyond the confines of traditional classrooms. Chi
 <img src="frontend/images/Screen Capture 003 - Document - 127.0.0.1.jpg" height="500px" width="800px">
 
 ## Landing Page
-<img src="frontend/images/landing.png" height="1300px" width="800px">
+<img src="frontend/images/landing.png" height="1400px" width="800px">
 
 ## Programs Page
 <img src="frontend/images/screencapture-127-0-0-1-5501-algorithm-samrat-7890-frontend-html-programone-html-2024-01-22-10_53_18.png"  height="1300px" width="800px">
