@@ -1,57 +1,29 @@
 body{
     /* background-image: url("image/WhatsApp\ Image\ 2024-01-20\ at\ 10.54.52\ PM.jpeg"); */
-    background-image: url("../images/daiga-ellaby-JZ51o_-UOY8-unsplash.jpg");
+    background-image: url("../html/bg.jpg");
     background-size: cover;
     background-position: center;
     padding: 0;
     margin: 0;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
+    font-family: "Salsa", cursive;
 }
-.background{
-    width: 430px;
-    height: 520px;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-}
-.background .shape{
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    border-radius: 50%;
-}
-.shape:first-child{
-    background: linear-gradient(
-        #1845ad,
-        #23a2f6
-    );
-    left: -80px;
-    top: -80px;
-}
-.shape:last-child{
-    background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
-    bottom: -80px;
-}
+
 form{
-    height: 550px;
+    height: 500px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    backdrop-filter: blur(5px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
     padding: 50px 35px;
+    font-family: "Salsa", cursive;
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -63,8 +35,9 @@ form *{
 form h3{
     font-size: 32px;
     font-weight: 500;
-    line-height: 42px;
+    /* line-height: 42px; */
     text-align: center;
+
 }
 
 label{
@@ -78,11 +51,12 @@ input{
     height: 50px;
     width: 100%;
     background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
+    border-radius: 25px;
     padding: 0 10px;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    border: 2px solid grey;
 }
 ::placeholder{
     color: #e5e5e5;
@@ -95,7 +69,7 @@ input{
     padding: 15px 0;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 5px;
+    border-radius: 24px;
     cursor: pointer;
 }
 .social{

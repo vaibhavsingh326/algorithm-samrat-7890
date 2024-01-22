@@ -1,26 +1,31 @@
 // PROGRAMONE SCSS
 
 @media screen and (max-width: 1000px) {
+
+    body{
+        background-color: #fbada1;
+    }
     .incontainer {
         // border: 2px solid black;
-  
+
         // padding-bottom: 30px;
         // padding-top: 20px;
         background-color: #fbada1;
-       height:45vh;
-       display: flex;
-       align-items:end;
+        height: 45vh;
+        display: flex;
+        align-items: end;
+
         .row {
             margin-top: 20px;
             margin-bottom: 20px;
-            width:100%;
+            width: 100%;
             height: 150px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             align-content: center;
-          
+
 
             .ncol {
                 width: 100%;
@@ -28,20 +33,32 @@
                 flex-direction: row;
                 display: inline-block;
                 align-items: end;
-              
-      
+
+
                 .ncol2 {
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
                     gap: 20px;
-                   
+
                 }
             }
         }
     }
 
+    .heading {
+        font-weight: 600;
+        text-align: center;
+        margin-top: 30px;
+        background-color: #fbada1;
+
+        .subt {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: 200;
+        }
+    }
     .procontainer {
         * {
             margin: 0;
@@ -49,17 +66,6 @@
             box-sizing: border-box;
         }
 
-        .heading {
-            font-weight: 600;
-            text-align: center;
-            margin-top: 30px;
-
-            .subt {
-                margin-top: 30px;
-                font-size: 18px;
-                font-weight: 200;
-            }
-        }
 
         width: 100%;
         height: auto;
@@ -181,7 +187,7 @@
                 }
             }
         }
-      
+
 
         @media screen and (max-width: 768px) {
 
@@ -209,17 +215,20 @@
 
 
 @media (min-width:1001px) {
-
+body{
+    background-color: #fbada1;
+}
     .incontainer {
         //  border: 2px solid black;
         background-color: #fbada1;
-        height:45vh;
+        height: 45vh;
         display: flex;
-        align-items:end;
-        .row{
+        align-items: end;
+
+        .row {
             margin-top: 20px;
             margin-bottom: 20px;
-            width:100%;
+            width: 100%;
             height: 150px;
             display: flex;
             flex-direction: column;
@@ -227,18 +236,39 @@
             align-items: center;
             align-content: center;
             // border: 4px solid rgb(0, 0, 0);
+            font-weight: 200;
+            font-family: "Salsa", cursive;
 
             .ncol {
+               
+
                 .ncol2 {
                     display: flex;
                     gap: 10px;
                     justify-content: center;
-                    
+
                 }
             }
         }
     }
+    .heading {
+        font-weight: 600;
+        text-align: center;
+        margin-top: 10px;
+        background-color:#fbada1;
+        font-family: "Salsa", cursive;
 
+        h1 {
+            font-size: 40px;
+        }
+
+        .subt {
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: 200;
+        }
+
+    }
     .procontainer {
         * {
             margin: 0;
@@ -247,23 +277,7 @@
 
         }
 
-        .heading {
-            font-weight: 600;
-            text-align: center;
-            margin-top: 10px;
-            font-family: "Salsa", cursive;
-
-            h1 {
-                font-size: 40px;
-            }
-
-            .subt {
-                margin-top: 30px;
-                font-size: 22px;
-                font-weight: 200;
-            }
-
-        }
+      
 
         width: 100%;
         height: auto;
@@ -570,7 +584,7 @@
         flex-direction: column;
         background-color: #eae2e7;
         border-radius: 40px;
-height: fit-content;
+        height: fit-content;
 
         .chooseup {
             // border: 2px solid rgb(156, 79, 79);
