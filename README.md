@@ -45,6 +45,25 @@ For those who prefer a more hands-on approach, our offline courses provide inter
 ## 3. Outdoor Learning
 We believe that learning goes beyond the confines of traditional classrooms. Child Education Hub offers outdoor courses that blend education with adventure. From nature walks and science expeditions to art in the park, our outdoor courses aim to make learning a dynamic and memorable experience.
 
+# Screenshots
+
+## Login Page
+<img src="frontend/images/Screen Capture 002 - Document - 127.0.0.1.jpg" height="400px" width="800px">
+
+## Signup Page
+<img src="frontend/images/Screen Capture 003 - Document - 127.0.0.1.jpg" height="400px" width="800px">
+
+## Landing Page
+<img src="frontend/images/landing.png" height="1000px" width="900px">
+
+## Programs Page
+<img src="frontend/images/screencapture-127-0-0-1-5501-algorithm-samrat-7890-frontend-html-programone-html-2024-01-22-10_53_18.png"  height="1000px" width="900px">
+
+## Courses page
+<img src="frontend/images/courses-1.png"  height="1000px" width="900px">
+
+
+## Contact page
 
 # Getting Started
 
