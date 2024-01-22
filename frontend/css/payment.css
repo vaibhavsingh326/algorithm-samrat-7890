@@ -35,7 +35,7 @@ body{
     background-color: aqua;
   width:90%;
    color:black;
-   height:70vh;
+  
 
 }
 .address{
@@ -136,7 +136,9 @@ body{
     .card input{
         width:170px;
     }
-   
+    .card{
+        gap:0px;
+    }
    
 }
 @media screen and (max-width: 658px) {

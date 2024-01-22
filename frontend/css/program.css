@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    
 }
 
 
@@ -11,7 +12,7 @@ body{
     /* grid-template-rows: auto; */
     gap: 18px;
     flex-wrap: wrap;
- 
+
 
 }
 .card{
@@ -21,7 +22,7 @@ body{
     margin-bottom: 50px;
     margin:0px 10px 0px 15px;
     width: 90%;
-    
+    transition:ease-in-out 1s;
     
 }
 .card:hover {
@@ -34,7 +35,9 @@ body{
     /* position: relative; */
     width: 100%;
     vertical-align: bottom;
-    border-radius: 50px;
+   
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 
@@ -97,6 +100,7 @@ body{
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 .course-btn:hover{
+
     background-color: #3877bb;
     box-shadow: rgba(56, 119, 187, 0.54) 8px 8px 0;
 }
