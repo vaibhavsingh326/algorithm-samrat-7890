@@ -1,7 +1,7 @@
 body{
   padding:0px;
   margin:0px;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Salsa", cursive;
   display: flex;
 
     justify-content: center;
@@ -22,7 +22,7 @@ body{
 }
 
 .inner-payment-container{
-   opacity: 0.9;
+   /* opacity: 0.5; */
     width:100%;
     display: flex;
   flex-direction: column;
@@ -32,11 +32,12 @@ body{
   color:black;
 }
 .payment-details{
-    background-color: aqua;
+    background-color: rgb(95, 97, 223);
   width:90%;
    color:black;
-  
-
+  padding:10px;
+   border-top-right-radius:35px;
+   border-top-left-radius:35px;
 }
 .address{
     width:100%;
@@ -109,12 +110,13 @@ body{
 .btn-payment{
     background-color:blue;
 
-   width:90%;
+   width:91%;
     color:white;
     padding:20px ;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border-color:rgb(8, 0, 255);
    cursor:pointer;
+  
 
 }
 .btn-link{
@@ -122,6 +124,7 @@ body{
     background-color:blue;
       padding:10px;
    border:none;
+   
 
  width:60%;
     color:white;
